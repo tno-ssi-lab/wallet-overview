@@ -4,6 +4,7 @@ from pprint import pprint
 from json2html import *
 import collections
 
+keys = ['name', 'company', 'openSource', 'connectionTypes', 'deepLinking', 'selectiveDisclosure', 'predicates', 'offlineFriendly', 'peer2peerProtocols', 'credExchangeProtocol', 'blockchain', 'credentialFormat', 'encodingScheme', 'cryptoAgility', 'signatureAlgorithm', 'verifierUnlinkability', 'hardwareSupport', 'postQuantumSecure', 'revocationAlgorithm', 'observability', 'identifierHolder', 'identifierIssuer', 'keyRotationHolder', 'keyHistoryHolder', 'keyRotationIssuer', 'keyHistoryIssuer', 'logo']
 
 def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
     """
@@ -394,6 +395,18 @@ def create_cred_profile_dict() -> dict:
 # html_file.write(etree.tostring(html_str, encoding='unicode', pretty_print=True))
 # html_file.close()
 
+def check_emptiness(wallets: dict) -> dict:
+    """
+        param wallets (dict): the dictionary containing wallets and their characteristics
+        returns: the same dictionary, where all values are present
+    """
+    for row in wallets:
+        for key in keys:
+            if not wallets[row].get(key):
+                wallets[row].update({key: "tbd"})
+    return wallets
+    
+
 def main():
     cred_profiles = create_cred_profile_dict()
     # Write to JSON file
@@ -414,9 +427,9 @@ def main():
     wallet_list = []
     for wallet in wallets_sorted:
         wallet_list += [wallets_sorted[wallet]]
+    wallets = check_emptiness(wallets)
     # Export to JSON file
-
-    json_file_wallets = open("flat-15.json", 'w')
+    json_file_wallets = open("wallets.json", 'w')
     json_file_wallets.write(json.dumps(wallet_list, indent=4))
     json_file_wallets.close()
     # Export to HTML file
