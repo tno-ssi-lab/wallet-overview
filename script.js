@@ -13,6 +13,7 @@ fetch("wallets.json")
 				<td>${wallet.name}</td>	
 				<td>${wallet.company}</td>
 				<td>${wallet.openSource}</td>
+				<td>${wallet.eassi}</td>
 				<td>${wallet.credentialFormat}</td>
 				<td>${wallet.encodingScheme}</td>
 				<td>${wallet.signatureAlgorithm}</td>
@@ -31,7 +32,7 @@ fetch("wallets.json")
 				<td>${wallet.predicates}</td>
 				<td>${wallet.verifierUnlinkability}</td>
 				<td>${wallet.cryptoAgility}</td>
-				<td>${wallet.eassi}</td>
+				<td>${wallet.postQuantumSecure}</td>
 			</tr>
 		`;
 	}

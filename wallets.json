@@ -6,7 +6,7 @@
             "purpose": "tbd"
         },
         "company": "AceBlock",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -24,7 +24,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -32,12 +39,12 @@
             "type": "",
             "purpose": "tbd"
         },
-        "company": "",
-        "connectionTypes": "",
+        "company": "tbd",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -45,13 +52,20 @@
         "logo": "static/apple-wallet.png",
         "name": "Apple Wallet",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "predicates": "tbd",
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -84,7 +98,8 @@
         "revocationAlgorithm": "Revocation not supported",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA",
-        "verifierUnlinkability": "No"
+        "verifierUnlinkability": "No",
+        "observability": "tbd"
     },
     {
         "blockchain": {
@@ -93,7 +108,7 @@
             "purpose": "tbd"
         },
         "company": "Hyland Credentials (formerly: Learning Machine)",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -111,7 +126,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -120,11 +142,11 @@
             "purpose": "tbd"
         },
         "company": "Blockpass IDN",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -138,7 +160,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -147,7 +176,7 @@
             "purpose": "tbd"
         },
         "company": "Bloom",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -165,7 +194,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -178,7 +214,7 @@
         "credExchangeProtocol": "OIDC4CI, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -208,7 +244,7 @@
             "purpose": "tbd"
         },
         "company": "Evernym",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -226,7 +262,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -235,11 +278,11 @@
             "purpose": "tbd"
         },
         "company": "ArcBlock",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -253,13 +296,20 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
             "used": "Yes",
-            "type": "Hyperledger Indy, Ethereum, EBSI blockchain",
-            "purpose": "For publishing schema IDs, credential def IDs and public DID"
+            "type": "Hyperledger. Ethereum blockchain: they will be using smart contracts.",
+            "purpose": "tbd"
         },
         "company": "iGrant.io",
         "connectionTypes": "Direct communication, Connection-based communication",
@@ -280,7 +330,14 @@
         "revocationAlgorithm": "Indy revocation, EBSI revocation",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "CL, ES256",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -289,11 +346,11 @@
             "purpose": "tbd"
         },
         "company": "Rabobank Nederland",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "yes",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -307,7 +364,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -316,11 +380,11 @@
             "purpose": "N/A"
         },
         "company": "Gataca Inc.",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "LDP-VC",
         "cryptoAgility": "Yes",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "JSON-LD",
         "hardwareSupport": "No",
@@ -350,11 +414,11 @@
             "purpose": "tbd"
         },
         "company": "Gimly",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -362,13 +426,20 @@
         "logo": "static/gimly-id*.png",
         "name": "Gimly ID*",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "predicates": "tbd",
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -376,12 +447,12 @@
             "type": "",
             "purpose": "tbd"
         },
-        "company": "",
-        "connectionTypes": "",
+        "company": "tbd",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -389,23 +460,30 @@
         "logo": "static/idema.png",
         "name": "IDEMA",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "predicates": "tbd",
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "name": "Identry",
         "company": "tbd",
         "openSource": "No",
         "connectionTypes": "Direct communication, Connection-based communication",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "selectiveDisclosure": "Yes",
         "predicates": "Yes",
-        "offlineFriendly": "",
+        "offlineFriendly": "tbd",
         "peer2peerProtocols": "DIDComm",
         "credExchangeProtocol": "Present Proof Protocol",
         "blockchain": {
@@ -437,7 +515,7 @@
             "purpose": "tbd"
         },
         "company": "Jolocom GmbH",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -455,7 +533,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -464,11 +549,11 @@
             "purpose": "tbd"
         },
         "company": "KayTrust",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -482,7 +567,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -491,11 +583,11 @@
             "purpose": "tbd"
         },
         "company": "Metadium Technology Inc",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -509,7 +601,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -619,11 +718,11 @@
             "purpose": "tbd"
         },
         "company": "Microsoft",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -637,17 +736,24 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "name": "PRISM",
         "company": "tbd",
         "openSource": "No",
         "connectionTypes": "Connection-based communication",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "selectiveDisclosure": "No",
         "predicates": "No",
-        "offlineFriendly": "",
+        "offlineFriendly": "tbd",
         "peer2peerProtocols": "DIDComm",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "blockchain": {
@@ -669,7 +775,8 @@
         "keyHistoryHolder": "No",
         "keyRotationIssuer": "No",
         "keyHistoryIssuer": "No",
-        "logo": "static/prism.png"
+        "logo": "static/prism.png",
+        "observability": "tbd"
     },
     {
         "blockchain": {
@@ -678,7 +785,7 @@
             "purpose": "tbd"
         },
         "company": "Selfkey Foundation",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -696,7 +803,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "name": "Sphereon Wallet",
@@ -738,11 +852,11 @@
             "purpose": "N/A"
         },
         "company": "Spherity GmbH",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "JSON-LD",
         "cryptoAgility": "No",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "hardwareSupport": "No",
@@ -768,10 +882,10 @@
     {
         "name": "Talao - Altme (2 wallets)",
         "company": "tbd",
-        "openSource": "",
-        "connectionTypes": "",
-        "peer2peerProtocols": "",
-        "credExchangeProtocol": "",
+        "openSource": "tbd",
+        "connectionTypes": "tbd",
+        "peer2peerProtocols": "tbd",
+        "credExchangeProtocol": "tbd",
         "blockchain": {
             "used": "No",
             "type": "N/A",
@@ -794,7 +908,9 @@
         "keyHistoryHolder": "No",
         "keyRotationIssuer": "No",
         "keyHistoryIssuer": "No",
-        "logo": "static/talao---altme-(2-wallets).png"
+        "logo": "static/talao---altme-(2-wallets).png",
+        "deepLinking": "tbd",
+        "offlineFriendly": "tbd"
     },
     {
         "blockchain": {
@@ -803,11 +919,11 @@
             "purpose": "tbd"
         },
         "company": "Talao",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -821,7 +937,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -848,7 +971,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -857,11 +987,11 @@
             "purpose": "N/A"
         },
         "company": "Validated ID",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -875,7 +1005,7 @@
         "name": "VIDwallet",
         "observability": "Yes",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "postQuantumSecure": "No",
         "predicates": "No",
@@ -890,12 +1020,12 @@
             "type": "",
             "purpose": "tbd"
         },
-        "company": "",
-        "connectionTypes": "",
+        "company": "tbd",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -903,13 +1033,20 @@
         "logo": "static/workday-wallet.png",
         "name": "Workday Wallet",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "predicates": "tbd",
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -986,11 +1123,11 @@
             "purpose": "tbd"
         },
         "company": "Blockchain Helix AG",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -1004,7 +1141,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -1012,12 +1156,12 @@
             "type": "",
             "purpose": "tbd"
         },
-        "company": "",
-        "connectionTypes": "",
+        "company": "tbd",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "tbd",
         "identifierHolder": "tbd",
@@ -1025,13 +1169,20 @@
         "logo": "static/idento-one.png",
         "name": "idento.one",
         "offlineFriendly": "tbd",
-        "openSource": "",
+        "openSource": "tbd",
         "peer2peerProtocols": "tbd",
         "predicates": "tbd",
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -1040,7 +1191,7 @@
             "purpose": "tbd"
         },
         "company": "uPort",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "tbd",
         "cryptoAgility": "tbd",
@@ -1058,7 +1209,14 @@
         "revocationAlgorithm": "tbd",
         "selectiveDisclosure": "tbd",
         "signatureAlgorithm": "tbd",
-        "verifierUnlinkability": "tbd"
+        "verifierUnlinkability": "tbd",
+        "hardwareSupport": "tbd",
+        "postQuantumSecure": "tbd",
+        "observability": "tbd",
+        "keyRotationHolder": "tbd",
+        "keyHistoryHolder": "tbd",
+        "keyRotationIssuer": "tbd",
+        "keyHistoryIssuer": "tbd"
     },
     {
         "blockchain": {
@@ -1067,11 +1225,11 @@
             "purpose": "N/A"
         },
         "company": "walt.id",
-        "connectionTypes": "",
+        "connectionTypes": "tbd",
         "credExchangeProtocol": "tbd",
         "credentialFormat": "JWT",
         "cryptoAgility": "Yes",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization",
         "hardwareSupport": "Yes",
@@ -1091,17 +1249,18 @@
         "revocationAlgorithm": "Revocation not supported",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA",
-        "verifierUnlinkability": "No"
+        "verifierUnlinkability": "No",
+        "observability": "tbd"
     },
     {
         "name": "walt.id Wallet Kit",
         "company": "tbd",
         "openSource": "Yes",
         "connectionTypes": "Direct communication, Connection-based communication",
-        "deepLinking": "",
+        "deepLinking": "tbd",
         "selectiveDisclosure": "No",
         "predicates": "No",
-        "offlineFriendly": "",
+        "offlineFriendly": "tbd",
         "peer2peerProtocols": "OIDC, SIOP",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "blockchain": {
@@ -1123,6 +1282,7 @@
         "keyHistoryHolder": "No",
         "keyRotationIssuer": "No",
         "keyHistoryIssuer": "No",
-        "logo": "static/walt-id-wallet-kit.png"
+        "logo": "static/walt-id-wallet-kit.png",
+        "observability": "tbd"
     }
 ]
