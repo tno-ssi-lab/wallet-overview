@@ -12,7 +12,7 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
         param cred_profiles (dict): relevant information from the credential comparison matrix
         returns: the dictionary containing all wallets and their characteristics
     """
-    with open('./form-extracts/wallet-chars-10.csv', 'r') as csv_file:
+    with open('./data/wallet-chars-15.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         reader = csv.reader(csv_file)
@@ -22,6 +22,8 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
                 row[1] = 'Atala PRISM'
             if row[1] == 'walt.id Wallet Kit':
                 row[1] = 'walt.id'
+            if 'IRMA' in row[1]:
+                row[1] = 'Yivi'
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
             json_dict[row[1]].update({'openSource':row[12]})
@@ -31,7 +33,7 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
             if row[16] == "Yes":
                 json_dict[row[1]].update({'blockchain':{'used': 'Yes','type': row[17], 'purpose': row[18]}})
             else:
-                json_dict[row[1]].update({'blockchain':'not used'})
+                json_dict[row[1]].update({'blockchain':{'used': 'No','type': 'N/A', 'purpose': 'N/A'}})
             
             # Get characteristics from credential comparison matrix based on credential format
             json_dict[row[1]].update({"credentialFormat":(', '.join(row[4].split(';')))})
@@ -117,6 +119,7 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
                 json_dict[row[1]].update({"keyRotationIssuer":'No'})
             if not json_dict[row[1]].get('keyHistoryIssuer'):
                 json_dict[row[1]].update({"keyHistoryIssuer":'No'})
+            json_dict[row[1]].update({'logo':f'static/{row[1].lower().replace(" ", "-").replace(".", "-")}.png'})
         csv_file.close()
     
     return collections.OrderedDict(sorted(json_dict.items()))
@@ -128,14 +131,14 @@ def create_wallet_dict_new_part(json_dict: dict, cred_profiles:dict) -> dict:
         param cred_profiles (dict): relevant information from the credential comparison matrix
         returns: the dictionary containing all wallets and their characteristics
     """
-    with open('./form-extracts/wallet-chars-14.csv', 'r') as csv_file:
+    with open('./data/wallet-chars-15.csv', 'r') as csv_file:
         reader = csv.reader(csv_file)
         # Skip the answers from the 'old' form.
         for i in range(10):
             next(csv_file)
         for row in reader:
             if 'IRMA' in row[1]:
-                row[1] = 'IRMA'
+                row[1] = 'Yivi'
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
             json_dict[row[1]].update({'openSource':row[10]})
@@ -149,7 +152,7 @@ def create_wallet_dict_new_part(json_dict: dict, cred_profiles:dict) -> dict:
             if row[18] == "Yes":
                 json_dict[row[1]].update({'blockchain':{'used': 'Yes','type': row[19], 'purpose': row[20]}})
             else:
-                json_dict[row[1]].update({'blockchain':'not used'})
+                json_dict[row[1]].update({'blockchain':{'used': 'No','type': 'N/A', 'purpose': 'N/A'}})
             
             # Get characteristics from credential comparison matrix based on credential format
             json_dict[row[1]].update({"credentialFormat":(', '.join(row[4].split(';')))})
@@ -229,6 +232,7 @@ def create_wallet_dict_new_part(json_dict: dict, cred_profiles:dict) -> dict:
                 json_dict[row[1]].update({"keyRotationIssuer":'No'})
             if not json_dict[row[1]].get('keyHistoryIssuer'):
                 json_dict[row[1]].update({"keyHistoryIssuer":'No'})
+            json_dict[row[1]].update({'logo':f'static/{row[1].lower().replace(" ", "-").replace(".", "-")}.png'})
         csv_file.close()
     return collections.OrderedDict(sorted(json_dict.items()))
 
@@ -239,7 +243,7 @@ def extend_wallet_dict(wallets: dict) -> dict:
         param wallets (dict): the dictionary containing wallets and their characteristics
         returns: the dictionary containing all wallets and their characteristics
     """
-    with open('./wallet-overview.csv', 'r') as csv_file:
+    with open('./data/wallet-overview-old.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         overlap = []
@@ -249,6 +253,8 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 row[0] = 'CertiShare Wallet'
             if row[0] == 'Spherity':
                 row[0] = 'Spherity Wallet'
+            if row[0] == 'IRMA':
+                row[0] = 'Yivi'
             if wallets.get(row[0]):
                 # print(f"{row[0]} is in the old and new set")
                 overlap += [row[0]] 
@@ -261,11 +267,11 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 wallets[row[0]].update({'openSource':row[5]})
 
             if row[11] == 'Yes' and not wallets[row[0]].get('blockchain'):
-                wallets[row[0]].update({'blockchain':{'used': 'Yes','type': row[12], 'purpose': ''}})
+                wallets[row[0]].update({'blockchain':{'used': 'Yes','type': row[12], 'purpose': 'tbd'}})
             elif row[11] == 'No' and not wallets[row[0]].get('blockchain'):
-                wallets[row[0]].update({'blockchain':'not used'})
+                wallets[row[0]].update({'blockchain':{'used': 'No','type': 'N/A', 'purpose': 'N/A'}})
             elif not wallets[row[0]].get('blockchain'):
-                wallets[row[0]].update({'blockchain':{'used': '','type': row[12], 'purpose': ''}})
+                wallets[row[0]].update({'blockchain':{'used': 'tbd','type': row[12], 'purpose': 'tbd'}})
 
             if not wallets[row[0]].get('connectionTypes'):
                 wallets[row[0]].update({'connectionTypes':row[24]})
@@ -278,8 +284,35 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 wallets[row[0]].update({'eassi':row[33]})
             else:
                 wallets[row[0]].update({'eassi':'No'})
-            
-            wallets[row[0]].update({'logo':f'static/{row[0]}.png'})
+
+            if not wallets[row[0]].get('credentialFormat'):
+                wallets[row[0]].update({'credentialFormat':'tbd'})
+            if not wallets[row[0]].get('encodingScheme'):
+                wallets[row[0]].update({'encodingScheme':'tbd'})
+            if not wallets[row[0]].get('signatureAlgorithm'):
+                wallets[row[0]].update({'signatureAlgorithm':'tbd'})
+            if not wallets[row[0]].get('identifierHolder'):
+                wallets[row[0]].update({'identifierHolder':'tbd'})
+            if not wallets[row[0]].get('identifierIssuer'):
+                wallets[row[0]].update({'identifierIssuer':'tbd'})
+            if not wallets[row[0]].get('revocationAlgorithm'):
+                wallets[row[0]].update({'revocationAlgorithm':'tbd'})
+            if not wallets[row[0]].get('peer2peerProtocols'):
+                wallets[row[0]].update({'peer2peerProtocols':'tbd'})
+            if not wallets[row[0]].get('credExchangeProtocol'):
+                wallets[row[0]].update({'credExchangeProtocol':'tbd'})
+            if not wallets[row[0]].get('offlineFriendly'):
+                wallets[row[0]].update({'offlineFriendly':'tbd'})
+            if not wallets[row[0]].get('selectiveDisclosure'):
+                wallets[row[0]].update({'selectiveDisclosure':'tbd'})
+            if not wallets[row[0]].get('predicates'):
+                wallets[row[0]].update({'predicates':'tbd'})
+            if not wallets[row[0]].get('verifierUnlinkability'):
+                wallets[row[0]].update({'verifierUnlinkability':'tbd'})
+            if not wallets[row[0]].get('cryptoAgility'):
+                wallets[row[0]].update({'cryptoAgility':'tbd'})
+            if not wallets[row[0]].get('logo'): 
+                wallets[row[0]].update({'logo':f'static/{row[0].lower().replace(" ", "-").replace(".", "-")}.png'})
             # if row[0] == "Atala PRISM":
             #     wallets[row[0]].update({'logo':f'{row[0]}.png'})
             # Order the characteristics for each wallet.
@@ -295,7 +328,7 @@ def create_cred_profile_dict() -> dict:
         returns: the dictionary containing all relevant characteristics
     """
     cred_profiles_chars = {}
-    with open('./credential-comparison/cred-format.csv', 'r') as csv_file:
+    with open('./data/cred-format.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         reader = csv.reader(csv_file)
@@ -308,7 +341,7 @@ def create_cred_profile_dict() -> dict:
                 cred_profiles_chars['credentialFormats'][row[0]].update({'selectiveDisclosure':row[9]})
                 cred_profiles_chars['credentialFormats'][row[0]].update({'predicates':row[10]})
         csv_file.close()
-    with open('./credential-comparison/identifier.csv', 'r') as csv_file:
+    with open('./data/identifier.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         reader = csv.reader(csv_file)
@@ -319,7 +352,7 @@ def create_cred_profile_dict() -> dict:
                 cred_profiles_chars['identifiers'][row[0]].update({'keyRotation':row[5]})
                 cred_profiles_chars['identifiers'][row[0]].update({'keyHistory':row[6]})
         csv_file.close()
-    with open('./credential-comparison/revocation.csv', 'r') as csv_file:
+    with open('./data/revocation.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         reader = csv.reader(csv_file)
@@ -332,7 +365,7 @@ def create_cred_profile_dict() -> dict:
                 cred_profiles_chars['revocation'][row[0]].update({'scalability':row[11]})
                 cred_profiles_chars['revocation'][row[0]].update({'offlineFriendliness':row[12]})
         csv_file.close()
-    with open('./credential-comparison/signature.csv', 'r') as csv_file:
+    with open('./data/signature.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
         reader = csv.reader(csv_file)
@@ -371,7 +404,7 @@ def main():
     wallets = create_wallet_dict_new_part(json_dict=wallets, cred_profiles=cred_profiles)
     # print(json.dumps(wallets, indent=4))
     wallets = extend_wallet_dict(wallets=wallets)
-    print(len(wallets.keys()))
+    print(f'{len(wallets.keys())} wallets are written')
     # print(json.dumps(wallets, indent=4))
     # Sort on wallet name
     wallets_sorted = collections.OrderedDict(sorted(wallets.items()))
@@ -380,7 +413,7 @@ def main():
         wallet_list += [wallets_sorted[wallet]]
     # Export to JSON file
 
-    json_file_wallets = open("flat-14.json", 'w')
+    json_file_wallets = open("flat-15.json", 'w')
     json_file_wallets.write(json.dumps(wallet_list, indent=4))
     json_file_wallets.close()
     # Export to HTML file

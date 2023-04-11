@@ -1,0 +1,28 @@
+Credential Format,Implementation Support (e.g. Libraries),IPR Policy,Specification,"Standardization (Body, Process)",Technology Readiness Level,Encoding Scheme,Rich Schemas/Semantic ,Crypto Agility,Selective Disclosure,Predicates,Compatibility with Signing Algorithms,Compatibility with Key Management Methods (Issuer)
+Glossary,Which/How many useful software libraries available?,What is the policy regarding intellectual properties associated with this technology? ,Where is the credential format specified?,Under which Standardization Body and which standards track/status is the credential format standardized?,According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf),Data encoding on the storage layer which applies to this credential format ,Is the credential format able to communicate data or annotations that supports the semantic understanding of the credential data?,"Is the credential format capable to cover different cryptographic algorithms and achieve cryptographic agility, as demanded by regulations?",Is the credential format capable of selective disclosure - presenting or revealing a subset of claims/attributes - without relying on architecture and protocol solutions like Just-in-Time issuance or a presentation transformation by a trusted third party?,"Is the credential Format able to produce general-purpose predicates, that means attestations without revealing the data, e.g. age over 18?",What signing algorithms can the format be combined with?,What key management methods can the credential format be combined with?
+AnonCred,"https://github.com/hyperledger/indy-shared-rs
+
+Community plans to pull anon creds implementation out of Indy and facilitate multi independent implementations through the specification (see respective cell)",tbd,https://anoncreds-wg.github.io/anoncreds-spec/,Community Spec (draft),TRL 6 or 7,JSON,no,none,yes (ZKP),yes,CL,"did:indy
+Cosmos (https://cheqd.io/blog/anoncreds-indy-pendence)
+Hyperledger Fabric (https://github.com/crubn/fabric-aries)
+memory ledger, file, immudb (https://github.com/findy-network)"
+LDP-VC,https://github.com/digitalbazaar/jsonld.js,https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements,https://www.w3.org/TR/vc-data-model/,W3C,TBD,JSON-LD,yes,yes,"yes, with one of the following algs:
+BBS
+CL-Signatures (CL)
+Short Randomizable Signatures (ps-sig)",depending on signature algorithm,tbd,tbd
+MDOC,"Apple, Idemia, Thales, HID global, GET Group, Google, Panasonic",tbd,ISO 18013-5,ISO,TRL 7,CBOR,no,yes,yes (salted hashes),no,tbd,tbd
+JWT,https://jwt.io/libraries,https://trustee.ietf.org/documents/trust-legal-provisions/,https://datatracker.ietf.org/doc/rfc7519/,IETF,TRL 9,compact and JSON serialization,no,yes,no,no,tbd,tbd
+JWP,tbd,tbd,https://github.com/json-web-proofs/json-web-proofs,DIF,TRL 3 or 4,JSON ?,tbd,yes,"yes (ZKP, Hash&Salt)",yes,tbd,tbd
+JWT-VC,https://jwt.io/libraries,https://www.w3.org/Consortium/Patent-Policy-20200915/#sec-Requirements,https://www.w3.org/TR/vc-data-model/,W3C,TRL 8,"JSON, JSON-LD",no,yes,no,no,tbd,tbd
+SD-JWT,https://github.com/oauthstuff/draft-selective-disclosure-jwt#implementations,https://trustee.ietf.org/documents/trust-legal-provisions/,https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/,IETF (OAuth WG),TRL 4,"JSON, JSON-LD ?",no,yes,yes (salted hashes),no,tbd,tbd
+SD-JWT-VC,tbd,https://trustee.ietf.org/documents/trust-legal-provisions/,https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/,IETF (OAuth WG),TRL 3,"JSON, JSON-LD ?",no,yes,yes (salted hashes),no,tbd,tbd
+,tbd,tbd,tbd,ITUT,TRL 9,ASN.1,no,yes,no,no,tbd,tbd
+CWT,tbd,tbd,https://www.rfc-editor.org/rfc/rfc8392.html,IETF,TRL 8,CBOR,tbd,yes,no,no,tbd,tbd
+ACDC (KERI),tbd,tbd,https://datatracker.ietf.org/doc/html/draft-ssmith-acdc-00,IETF (intention to go to Blockchain WG),tbd,CESR,tbd,yes,yes*,possible,tbd,tbd
+CESR/CESR Proof,tbd,tbd,https://www.ietf.org/archive/id/draft-pfeairheller-cesr-proof-00.html,IETF (intention to go to Blockchain WG),tbd,tbd,tbd,yes,yes,tbd,tbd,tbd
+ICAO DTC,tbd,tbd,tbd,ICAO,tbd,tbd,tbd,tbd,yes,tbd,tbd,tbd
+Gordian Envelope,"command-line MVP https://github.com/BlockchainCommons/envelope-cli-swift, rust libraries on the way.",SPDI:BSD-2-Clause-Patent https://spdx.org/licenses/BSD-2-Clause-Patent.html,https://github.com/BlockchainCommons/BCSwiftSecureComponents (this will be moved elsewhere soon).,IETF (for CBOR registration) W3C (for did method and alternative DID document and credentials data format),TRL 3 (did:keri - style event receipts),CBOR,optional yes,3 suites,"yes (hash-inclusion proof, optional salts)",no,tbd,tbd
+Idemix ABC,"https://github.com/privacybydesign/gabi (cryptography), https://github.com/privacybydesign/irmago (semantics, wallet, servers, more)",tbd,None. Protocol documented here: https://irma.app/docs/irma-protocol,Privacy by Design Foundation,TRL 9,JSON,yes,none (only Idemix supported),yes,yes,CL,raw public keys (none jwk)
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+,>>> NEW LINES ONLY IN THE 2 LINE AREA ABOVE!,,,,,,,,,,,

@@ -1,0 +1,15 @@
+Revocation Algorithm,Implementation Support (e.g. Libraries) / Active Community,IPR Policy,Specification,"Standardization (Body, Process)",Technology Readiness Level,"Recognition by government authorities (NIST, BSI, ...)",Category,Performance,Observability,Traceability,Scalability,Offline Friendliness
+Glossary,How complex is the implementation? Which/How many useful software libraries available?,What is the policy regarding intellectual properties associated with this technology? ,Where is the revocation mechanism specified?,Under which Standardization Body and which standards track/status is the revocation algorithm standardized,According to NASA-Scheme (http://www.artemisinnovation.com/images/TRL_White_Paper_2004-Edited.pdf),Is the revocation algorithm recognized in regulatory frameworks of leading government bodies?,Algorithm that behind the implementation of the revocation (Bitlist = each credential has a position in the list. Deny-List: revoced credentials will be added on demand. Accumulator: cryptographic proof the holder presents to show that the credential is not revoked),"How performant is the revocation mechanism (for issuer, holder and verifier)?",Does the Verifier have the possiblity to observe the revocation status beyond the presentation?,Does the issuer have possiblities to trace the usage of his issued credentials through the revocation mechanism?,At what scale has the algorithm/technology been demonstrated to work? Are there any known issues?,Does the revocation mechanism support an authentication if the holder is offline?
+Status List 2021,https://github.com/transmute-industries/verifiable-data/tree/main/packages/vc-status-rl-2020,tbd,https://w3c-ccg.github.io/vc-status-list-2021/,W3C,tbd,no,Bitstring,tbd,yes,potentially possible with malicious ,tbd,tbd
+CRL - cerfticate revocation list,tbd,tbd,,tbd,tbd,yes,Deny-List,tbd,yes,tbd,tbd,tbd
+Indy Revocation,Indy SDK,tbd,tbd,AnonCreds,tbd,no,Accumulator,tbd,no,tbd,limitations by accumulator size,tbd
+BBF18- cryptographic accumulator based on RSA,tbd,tbd,tbd,tbd,tbd,no,Accumulator,tbd,no,tbd,tbd,tbd
+VB20 - cryptographic accumulator based on pairings,tbd,tbd,tbd,tbd,tbd,no,Accumulator,tbd,no,tbd,tbd,tbd
+Non-Revocation Token,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd
+SLTD database (travel and identity documents),tbd,tbd,tbd,tbd,tbd,tbd,Deny-List,tbd,tbd,tbd,tbd,tbd
+Validity Credential,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd,tbd
+RSA-B - cryptographic accumulator based on RSA,https://github.com/privacybydesign/gabi/tree/master/revocation,tbd,https://eprint.iacr.org/2017/043.pdf,tbd,tbd,no,Accumulator,tbd,yes,no,tbd,yes
+short-term expiration,,,minutes,,,,,,,,,
+medium-term expiration,,,weeks,,,,,,,,,
+,,,,,,,,,,,,
+,>>> NEW LINES ONLY IN THE 2 LINE AREA ABOVE!,,,,,,,,,,,

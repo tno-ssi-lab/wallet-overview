@@ -39,34 +39,9 @@ table img{
 	width:  70%;
 }
 
-table td.total-price{
-	font-weight: bold;
-	font-size: 22px;
-}
-table a{
-	text-decoration: none;
-	color: darkred;
-	background-color: #ffecef;
-	padding: 10px 15px;
-}
-table a:active{
-	background-color: #ccf4d6;
-	color:  green;
-}
-
-table select{
-	padding: 10px;
-	width:  200px;
-	font-size: 16px;
-	border: thin solid #d4d4d4;
-	background-color: transparent;
-}
-table select:focus{
-	outline: none;
-}
 
 table img{
-	width:  60%;
+	width:  100%;
 }
 
 .tableFixHead {

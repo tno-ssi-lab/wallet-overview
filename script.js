@@ -1,5 +1,5 @@
 
-fetch("new-14-flat.json")
+fetch("flat-15.json")
 .then(function(response){
 	return response.json();
 })
@@ -21,6 +21,8 @@ fetch("new-14-flat.json")
 				<td>${wallet.revocationAlgorithm}</td>
 				<td>${wallet.peer2peerProtocols}</td>
 				<td>${wallet.blockchain.used}</td>
+				<td>tbc</td>
+				<td>tbc</td>
 				<td>${wallet.credExchangeProtocol}</td>
 				<td>${wallet.connectionTypes}</td>
 				<td>${wallet.deepLinking}</td>
@@ -37,3 +39,6 @@ fetch("new-14-flat.json")
 
 	placeholder.innerHTML = out;
 });
+				// <td>${wallet.blockchain.type}</td>
+				// <td>${wallet.blockchain.purpose}</td>
+				// needs wrapping!
