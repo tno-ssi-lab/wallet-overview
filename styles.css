@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+	margin: 5px;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -18,27 +18,32 @@ h1{
 table{
 	width:  1000px;
 	margin: 30px auto;
+	/* table-layout: fixed; for text wrapping */
 }
 
 table th{
 	padding: 10px 5px;
 	background-color: #a4cdea;
-	/* background-color: #fff; */
 	border:  thin solid #d4d4d4;
 }
 
 table td{
 	padding: 10px;
 	border:  thin solid #d4d4d4;
-	width: 18%;
+	width: 100%;
 	text-align: center;
-	background-color: #fff;
+	/* background-color: #fff; */
 }
 
-table img{
-	width:  70%;
+#td-wrap{ /* for text wrapping */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  	overflow: hidden; 
 }
 
+tr:nth-child(even) {
+	background-color: rgb(224, 232, 232);
+}
 
 table img{
 	width:  100%;
@@ -46,7 +51,7 @@ table img{
 
 .tableFixHead {
 	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
-	height: 95vh; /* gives an initial height of 200px to the table */
+	height: 95vh; /* s.t. scroll bar is visible */
   }
   .tableFixHead thead th {
 	position: sticky; /* make the table heads sticky */
@@ -60,7 +65,4 @@ table img{
   td {
 	padding: 8px 16px;
 	border: 1px solid #ccc;
-  }
-  th {
-	background: #eee;
   }

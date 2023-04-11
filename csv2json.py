@@ -26,6 +26,7 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
                 row[1] = 'Yivi'
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
+            json_dict[row[1]].update({'company':'tbd'})
             json_dict[row[1]].update({'openSource':row[12]})
             json_dict[row[1]].update({'connectionTypes':(', '.join(row[13].split(';')))})
             json_dict[row[1]].update({'peer2peerProtocols':(', '.join(row[14].split(';')))})
@@ -141,6 +142,7 @@ def create_wallet_dict_new_part(json_dict: dict, cred_profiles:dict) -> dict:
                 row[1] = 'Yivi'
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
+            json_dict[row[1]].update({'company':'tbd'})
             json_dict[row[1]].update({'openSource':row[10]})
             json_dict[row[1]].update({'connectionTypes':(', '.join(row[11].split(';')))})
             json_dict[row[1]].update({'deepLinking':row[12]})
@@ -246,7 +248,7 @@ def extend_wallet_dict(wallets: dict) -> dict:
     with open('./data/wallet-overview-old.csv', 'r') as csv_file:
         next(csv_file)
         next(csv_file)
-        overlap = []
+        # overlap = []
         for row in csv_file:
             row = str(row).split(';')
             if row[0] == 'myEGO2GO - Unique as you are':
@@ -255,11 +257,14 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 row[0] = 'Spherity Wallet'
             if row[0] == 'IRMA':
                 row[0] = 'Yivi'
-            if wallets.get(row[0]):
-                # print(f"{row[0]} is in the old and new set")
-                overlap += [row[0]] 
-            else:
-                # print(f"{row[0]} is not in the new set")
+            if row[1] == 'PRISM':
+                row[1] = 'Atala PRISM'
+            # 
+            #     # print(f"{row[0]} is in the old and new set")
+            #     overlap += [row[0]] 
+            # else:
+            #     # print(f"{row[0]} is not in the new set")
+            if not wallets.get(row[0]):
                 wallets[row[0]] = {}
             wallets[row[0]].update({'company':row[2]})
             wallets[row[0]].update({'name':row[0]})
@@ -279,7 +284,6 @@ def extend_wallet_dict(wallets: dict) -> dict:
             if not wallets[row[0]].get('deepLinking'):
                 wallets[row[0]].update({'deepLinking':row[27]})
 
-            #if not wallets[row[0]].get('TNO EASSI'):
             if row[33] != '':
                 wallets[row[0]].update({'eassi':row[33]})
             else:
@@ -313,8 +317,6 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 wallets[row[0]].update({'cryptoAgility':'tbd'})
             if not wallets[row[0]].get('logo'): 
                 wallets[row[0]].update({'logo':f'static/{row[0].lower().replace(" ", "-").replace(".", "-")}.png'})
-            # if row[0] == "Atala PRISM":
-            #     wallets[row[0]].update({'logo':f'{row[0]}.png'})
             # Order the characteristics for each wallet.
             wallets[row[0]] = collections.OrderedDict(sorted(wallets[row[0]].items()))
     csv_file.close()
@@ -404,6 +406,7 @@ def main():
     wallets = create_wallet_dict_new_part(json_dict=wallets, cred_profiles=cred_profiles)
     # print(json.dumps(wallets, indent=4))
     wallets = extend_wallet_dict(wallets=wallets)
+
     print(f'{len(wallets.keys())} wallets are written')
     # print(json.dumps(wallets, indent=4))
     # Sort on wallet name

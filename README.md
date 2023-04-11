@@ -1,6 +1,9 @@
 # Overview of SSI Wallets and their Characteristics
 
-Here we maintain our overview for SSI wallets. The information is aggregated from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)) and our [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison).
+This is the repository for TNO's overview of SSI wallets. The actual overview can be found [here](https://tno-ssi-lab.github.io/wallet-overview/).
+
+## Sources
+The information is aggregated from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and our [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison).
 
 ## Goal 
 The overview serves the following purposes:
@@ -11,7 +14,50 @@ The overview serves the following purposes:
 ## How to contribute
 You can contribute to the overview by:
 - Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
-- Forking the repository and filling in / correcting information in the wallet overview. <!-- explanation of data format to be filled in and that we will review it -->
 - Sharing this repository in your network.
+- Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 
+### Modifying `wallets.json` {#modifying-json}
 
+To update the overview, you just have to update `wallets.json`. Search for your wallet and update the characteristic(s) you want to change. If you want to add a new wallet, add and fill in the [format](#format) to `wallets.json`.
+
+Note that you can't add new types of characteristics. If you feel that a new characteristic should be added, create an [issue](https://github.com/tno-ssi-lab/wallet-overview/issues/new).
+
+After your merge request has been accepted, you will see the updated version of the overview on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/). If you want to see locally what the modified HTML looks like, open a terminal in your local copy of the repository and type `python -m http.server 8080`, then you should see the modified overview [here](http://localhost:8080/).
+
+### Format {#format}
+If you want to add/change the logo, also add the logo to `wallet-overview/static/`.
+
+    {
+        "name": "",
+        "company": "",
+        "openSource": "",
+        "connectionTypes": "",
+        "deepLinking": "",
+        "selectiveDisclosure": "",
+        "predicates": "",
+        "offlineFriendly": "",
+        "peer2peerProtocols": "",
+        "credExchangeProtocol": "",
+        "blockchain": {
+            "used": "",
+            "type": "",
+            "purpose": ""
+        },
+        "credentialFormat": "",
+        "encodingScheme": "",
+        "cryptoAgility": "",
+        "signatureAlgorithm": "",
+        "verifierUnlinkability": "",
+        "hardwareSupport": "",
+        "postQuantumSecure": "",
+        "revocationAlgorithm": "",
+        "observability": "",
+        "identifierHolder": "",
+        "identifierIssuer": "",
+        "keyRotationHolder": "",
+        "keyHistoryHolder": "",
+        "keyRotationIssuer": "",
+        "keyHistoryIssuer": "",
+        "logo": "static/wallet.png"
+    }

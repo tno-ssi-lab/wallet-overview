@@ -399,6 +399,7 @@
     },
     {
         "name": "Identry",
+        "company": "tbd",
         "openSource": "No",
         "connectionTypes": "Direct communication, Connection-based communication",
         "deepLinking": "",
@@ -580,6 +581,7 @@
     },
     {
         "name": "MYKEEPiN, B PASS, THEPOL, KEEPiN",
+        "company": "tbd",
         "openSource": "No",
         "connectionTypes": "Direct communication",
         "deepLinking": "Yes",
@@ -639,6 +641,7 @@
     },
     {
         "name": "PRISM",
+        "company": "tbd",
         "openSource": "No",
         "connectionTypes": "Connection-based communication",
         "deepLinking": "",
@@ -697,6 +700,7 @@
     },
     {
         "name": "Sphereon Wallet",
+        "company": "tbd",
         "openSource": "Yes",
         "connectionTypes": "Direct communication, Connection-based communication",
         "deepLinking": "Yes",
@@ -763,6 +767,7 @@
     },
     {
         "name": "Talao - Altme (2 wallets)",
+        "company": "tbd",
         "openSource": "",
         "connectionTypes": "",
         "peer2peerProtocols": "",
@@ -1090,6 +1095,7 @@
     },
     {
         "name": "walt.id Wallet Kit",
+        "company": "tbd",
         "openSource": "Yes",
         "connectionTypes": "Direct communication, Connection-based communication",
         "deepLinking": "",

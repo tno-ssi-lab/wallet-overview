@@ -1,5 +1,5 @@
 
-fetch("flat-15.json")
+fetch("wallets.json")
 .then(function(response){
 	return response.json();
 })
@@ -32,7 +32,6 @@ fetch("flat-15.json")
 				<td>${wallet.verifierUnlinkability}</td>
 				<td>${wallet.cryptoAgility}</td>
 				<td>${wallet.eassi}</td>
-				
 			</tr>
 		`;
 	}
@@ -42,3 +41,4 @@ fetch("flat-15.json")
 				// <td>${wallet.blockchain.type}</td>
 				// <td>${wallet.blockchain.purpose}</td>
 				// needs wrapping!
+				// <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:200px;">${wallet.encodingScheme}</td>
