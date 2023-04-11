@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Setting the pages character encoding -->
+<meta charset="UTF-8">
+
+<!-- The meta viewport will scale my content to any device width -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link to my stylesheet -->
+<link rel="stylesheet" href="styles.css">
+<title>Wallet Characteristics Overview</title>
+</head>
+<body>
+	<h1>Wallet Overview</h1>
+	<!-- <button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+	<p id="demo"></p> -->
+<div class="tableFixHead">
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th>Image</th>
+				<th onclick="sortTable(1)">Wallet</th>
+				<th onclick="sortTable(2)">Company</th>
+				<th onclick="sortTable(3)">Open Source</th>
+
+				<th onclick="sortTable(4)">Credential Format</th>
+				<th onclick="sortTable(5)">Encoding Scheme</th>
+				<th onclick="sortTable(6)">Signature Algorithm</th>
+				<th onclick="sortTable(7)">Holder Identifier</th>
+				<th onclick="sortTable(8)">Issuer Identifier</th>
+				<th onclick="sortTable(9)">Revocation Algorithm</th>
+				<th onclick="sortTable(10)">Peer-to-Peer Protocol</th>
+				<th>Blockchain</th>
+				<th onclick="sortTable(11)">Credential Exchange Protocol</th>
+				<th onclick="sortTable(12)">Connection Type</th>
+				<th onclick="sortTable(13)">Deep Linking</th>
+				<th onclick="sortTable(14)">Offline Friendliness</th>
+				<th onclick="sortTable(15)">Selective Disclosure</th>
+				<th onclick="sortTable(16)">Predicates</th>
+				<th onclick="sortTable(17)">Verifier Unlinkability</th>
+				<th onclick="sortTable(18)">Crypto Agility</th>
+				<th onclick="sortTable(19)">Connected to TNO EASSI</th>
+				
+			</tr>
+		</thead>
+		<tbody id="data-output">
+			<!-- Wallets from javascript file in here. -->
+		</tbody>
+	</table>
+</div>
+
+<script>
+	function sortTable(n) {
+	  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+	  table = document.getElementById("myTable");
+	  switching = true;
+	  // Set the sorting direction to ascending:
+	  dir = "asc";
+	  /* Make a loop that will continue until
+	  no switching has been done: */
+	  while (switching) {
+		// Start by saying: no switching is done:
+		switching = false;
+		rows = table.rows;
+		/* Loop through all table rows (except the
+		first, which contains table headers): */
+		for (i = 1; i < (rows.length - 1); i++) {
+		  // Start by saying there should be no switching:
+		  shouldSwitch = false;
+		  /* Get the two elements you want to compare,
+		  one from current row and one from the next: */
+		  x = rows[i].getElementsByTagName("TD")[n];
+		  y = rows[i + 1].getElementsByTagName("TD")[n];
+		  /* Check if the two rows should switch place,
+		  based on the direction, asc or desc: */
+		  if (dir == "asc") {
+			if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+			  // If so, mark as a switch and break the loop:
+			  shouldSwitch = true;
+			  break;
+			}
+		  } else if (dir == "desc") {
+			if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+			  // If so, mark as a switch and break the loop:
+			  shouldSwitch = true;
+			  break;
+			}
+		  }
+		}
+		if (shouldSwitch) {
+		  /* If a switch has been marked, make the switch
+		  and mark that a switch has been done: */
+		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+		  switching = true;
+		  // Each time a switch is done, increase this count by 1:
+		  switchcount ++;
+		} else {
+		  /* If no switching has been done AND the direction is "asc",
+		  set the direction to "desc" and run the while loop again. */
+		  if (switchcount == 0 && dir == "asc") {
+			dir = "desc";
+			switching = true;
+		  }
+		}
+	  }
+	}
+</script>
+<script src="test.js"></script> <!-- Link to the javascript file -->
+</body>
+</html>
