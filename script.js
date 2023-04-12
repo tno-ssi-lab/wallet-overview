@@ -22,8 +22,8 @@ fetch("wallets.json")
 				<td>${wallet.revocationAlgorithm}</td>
 				<td>${wallet.peer2peerProtocols}</td>
 				<td>${wallet.blockchain.used}</td>
-				<td>tbc</td>
-				<td>tbc</td>
+				<td class="td-wrap">${wallet.blockchain.type}</td>
+				<td class="td-wrap">${wallet.blockchain.purpose}</td>
 				<td>${wallet.credExchangeProtocol}</td>
 				<td>${wallet.connectionTypes}</td>
 				<td>${wallet.deepLinking}</td>
