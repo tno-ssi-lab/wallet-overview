@@ -6,44 +6,46 @@
 
 <!-- The meta viewport will scale my content to any device width -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!-- Link to font-awesome for icons
+<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Link to my stylesheet -->
 <link rel="stylesheet" href="styles.css">
 <title>Wallet Characteristics Overview</title>
 </head>
 <body>
 	<h1>Wallet Overview</h1>
-	<!-- <button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
-	<p id="demo"></p> -->
 <div class="tableFixHead">
 	<table id="myTable">
 		<thead>
 			<tr>
 				<th>Image</th>
-				<th onclick="sortTable(1)">Wallet</th>
-				<th onclick="sortTable(2)">Company</th>
-				<th onclick="sortTable(3)">Open Source</th>
-				<th onclick="sortTable(4)">Connected to TNO EASSI</th>
 
-				<th onclick="sortTable(5)">Credential Format</th>
-				<th onclick="sortTable(6)">Encoding Scheme</th>
-				<th onclick="sortTable(7)">Signature Algorithm</th>
-				<th onclick="sortTable(8)">Holder Identifier</th>
-				<th onclick="sortTable(9)">Issuer Identifier</th>
-				<th onclick="sortTable(10)">Revocation Algorithm</th>
-				<th onclick="sortTable(11)">Peer-to-Peer Protocol</th>
-				<th>Blockchain Used</th>
-				<th>Blockchain Type</th>
-				<th>Blockchain Purpose</th>
-				<th onclick="sortTable(12)">Credential Exchange Protocol</th>
-				<th onclick="sortTable(13)">Connection Type</th>
-				<th onclick="sortTable(14)">Deep Linking</th>
-				<th onclick="sortTable(15)">Offline Friendliness</th>
-				<th onclick="sortTable(16)">Selective Disclosure</th>
-				<th onclick="sortTable(17)">Predicates</th>
-				<th onclick="sortTable(18)">Verifier Unlinkability</th>
-				<th onclick="sortTable(19)">Crypto Agility</th>
-				<th onclick="sortTable(20)">Post-Quantum Secure</th>
+				<!-- <th onclick="sortTable(1)">Wallet <i class="fa-solid fa-sort"></i></th> -->
+				<th>Wallet<button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Wallet<button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Company<button class="btn" onclick="sortTable(2)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Open Source<button class="btn" onclick="sortTable(3)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Connected to TNO EASSI<button class="btn" onclick="sortTable(4)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Credential Format<button class="btn" onclick="sortTable(5)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Encoding Scheme<button class="btn" onclick="sortTable(6)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Signature Algorithm<button class="btn" onclick="sortTable(7)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Holder Identifier<button class="btn" onclick="sortTable(8)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Issuer Identifier<button class="btn" onclick="sortTable(9)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Revocation Algorithm<button class="btn" onclick="sortTable(10)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Peer-to-Peer Protocol<button class="btn" onclick="sortTable(11)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Blockchain Used<button class="btn" onclick="sortTable(12)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Blockchain Type<button class="btn" onclick="sortTable(13)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Blockchain Purpose<button class="btn" onclick="sortTable(14)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Credential Exchange Protocol<button class="btn" onclick="sortTable(15)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Connection Type<button class="btn" onclick="sortTable(16)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Deep Linking<button class="btn" onclick="sortTable(17)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Offline Friendliness<button class="btn" onclick="sortTable(18)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Selective Disclosure<button class="btn" onclick="sortTable(19)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Predicates<button class="btn" onclick="sortTable(20)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Verifier Unlinkability<button class="btn" onclick="sortTable(21)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Crypto Agility<button class="btn" onclick="sortTable(22)"><i class="fa-solid fa-sort"></i></button></th>
+				<th>Post-Quantum Secure<button class="btn" onclick="sortTable(23)"><i class="fa-solid fa-sort"></i></button></th>
 			</tr>
 		</thead>
 		<tbody id="data-output">

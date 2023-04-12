@@ -71,3 +71,13 @@ table img{
 .td-wrap:hover{
     white-space: pre-wrap;
 }
+
+/* .icon{
+	color: red;
+	font-size:small;
+} */
+
+.btn{
+	background-color: transparent;
+	border: transparent;
+}
