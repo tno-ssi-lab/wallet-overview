@@ -1,6 +1,4 @@
 import csv, json
-from lxml import etree, html
-from pprint import pprint
 from json2html import *
 import collections
 
@@ -25,6 +23,7 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
                 row[1] = 'walt.id'
             if 'IRMA' in row[1]:
                 row[1] = 'Yivi'
+
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
             json_dict[row[1]].update({'company':'tbd'})
@@ -89,15 +88,19 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
                 # There are more characteristics, such as traceability, but these are all 'tbd', so makes no sense to include at this point.
             
             # Get characteristics from credential comparison matrix based on identifiers
-            if row[8] != "":
-                json_dict[row[1]].update({"identifierHolder":row[8]})
+            if row[7] == "DID":
+                if "did" not in row[-2].lower():
+                    row[-2] = "did:" + row[-2]
+                json_dict[row[1]].update({"identifierHolder":row[-2].lower()})
             else:
                 json_dict[row[1]].update({"identifierHolder":row[7]})
-            if row[10] != "":
-                json_dict[row[1]].update({"identifierIssuer":row[10]})
+            if row[8] == "DID":
+                if "did" not in row[-1].lower():
+                    row[-1] = "did:" + row[-1]
+                json_dict[row[1]].update({"identifierIssuer":row[-1].lower()})
             else:
-                json_dict[row[1]].update({"identifierIssuer":row[9]})
-            # for first 10 filled, manually fix the resulting JSON.
+                json_dict[row[1]].update({"identifierIssuer":row[8]})
+
             temp = json_dict[row[1]]['identifierHolder'].split(';')
             for elem in temp:
                 if cred_profiles['identifiers'].get(elem):
@@ -136,7 +139,7 @@ def create_wallet_dict_new_part(json_dict: dict, cred_profiles:dict) -> dict:
     with open('./data/wallet-chars-15.csv', 'r') as csv_file:
         reader = csv.reader(csv_file)
         # Skip the answers from the 'old' form.
-        for i in range(10):
+        for i in range(44):
             next(csv_file)
         for row in reader:
             if 'IRMA' in row[1]:
@@ -260,11 +263,7 @@ def extend_wallet_dict(wallets: dict) -> dict:
                 row[0] = 'Yivi'
             if row[1] == 'PRISM':
                 row[1] = 'Atala PRISM'
-            # 
-            #     # print(f"{row[0]} is in the old and new set")
-            #     overlap += [row[0]] 
-            # else:
-            #     # print(f"{row[0]} is not in the new set")
+
             if not wallets.get(row[0]):
                 wallets[row[0]] = {}
             wallets[row[0]].update({'company':row[2]})
@@ -381,29 +380,16 @@ def create_cred_profile_dict() -> dict:
                 cred_profiles_chars['signature'][row[0]].update({'postQuantumSecure':row[11]})
         csv_file.close()
     return cred_profiles_chars
-        # print(json.dumps(cred_profiles_chars, indent=4))
-
-# # Convert the dictionary to JSON
-# # Order the dictionary based on wallet name.
-# json_dict = collections.OrderedDict(sorted(json_dict.items()))
-# json_file = open("test-14.json", 'w')
-# json_file.write(json.dumps(json_dict, indent=4))
-
-# # Convert to html file.
-# html_str = html.fromstring(json2html.convert(json = json_dict))
-# html_file = open("test-14.html", 'w')
-# html_file.write(etree.tostring(html_str, encoding='unicode', pretty_print=True))
-# html_file.close()
 
 def check_emptiness(wallets: dict) -> dict:
     """
         param wallets (dict): the dictionary containing wallets and their characteristics
         returns: the same dictionary, where all values are present
     """
-    for row in wallets:
+    for wallet in wallets:
         for key in keys:
-            if not wallets[row].get(key):
-                wallets[row].update({key: "tbd"})
+            if not wallets[wallet].get(key):
+                wallets[wallet].update({key: "tbd"})
     return wallets
     
 
@@ -413,30 +399,27 @@ def main():
     json_file_cred = open("cred_profile.json", 'w')
     json_file_cred.write(json.dumps(cred_profiles, indent=4))
     json_file_cred.close()
-    # print(json.dumps(cred_profiles, indent=4))
+
     wallets = create_wallet_dict_old_part(cred_profiles=cred_profiles)
 
     wallets = create_wallet_dict_new_part(json_dict=wallets, cred_profiles=cred_profiles)
-    # print(json.dumps(wallets, indent=4))
+
     wallets = extend_wallet_dict(wallets=wallets)
 
     print(f'{len(wallets.keys())} wallets are written')
-    # print(json.dumps(wallets, indent=4))
+    
+    wallets = check_emptiness(wallets)
+
     # Sort on wallet name
     wallets_sorted = collections.OrderedDict(sorted(wallets.items()))
     wallet_list = []
     for wallet in wallets_sorted:
         wallet_list += [wallets_sorted[wallet]]
-    wallets = check_emptiness(wallets)
     # Export to JSON file
     json_file_wallets = open("wallets.json", 'w')
     json_file_wallets.write(json.dumps(wallet_list, indent=4))
     json_file_wallets.close()
-    # Export to HTML file
-    # wallets_html = html.fromstring(json2html.convert(json = wallets_sorted))
-    # html_file = open("test-14-new.html", 'w')
-    # html_file.write(etree.tostring(wallets_html, encoding='unicode', pretty_print=True))
-    # html_file.close()
+
 
 if __name__ == "__main__":
     main()
