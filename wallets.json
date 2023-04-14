@@ -69,13 +69,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "Cardano",
+            "purpose": "Anchoring public DIDs for issuers and/or verifiers (ie: enabling trust registry)"
         },
         "company": "IOHK",
         "connectionTypes": "Connection",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "No",
@@ -92,7 +92,7 @@
         "name": "Atala PRISM",
         "offlineFriendly": "tbd",
         "openSource": "No",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "DIDComm",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Revocation not supported",
@@ -138,7 +138,7 @@
     {
         "blockchain": {
             "used": "Yes",
-            "type": "Ethereum or Blockpass (not clear from their website and documentation)",
+            "type": "Ethereum or Blockpass",
             "purpose": "tbd"
         },
         "company": "Blockpass IDN",
@@ -205,13 +205,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "Hyperledger Indy",
+            "purpose": "Schema, CredentialDefinitions, DID, Revocation"
         },
         "company": "The Ego Company",
         "connectionTypes": "tbd",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "OIDC4CI, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
         "deepLinking": "tbd",
@@ -229,7 +229,7 @@
         "observability": "No",
         "offlineFriendly": "tbd",
         "openSource": "No",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "DIDComm, DID Exchange Protocol",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
@@ -375,13 +375,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "We are agnostic to the infra, so the platform right now supports Ethereum, Fabric and EBSI",
+            "purpose": "To anchor DIDs (legal entities), and to anchor the trust framework"
         },
         "company": "Gataca Inc.",
         "connectionTypes": "tbd",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "credentialFormat": "LDP-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "tbd",
@@ -399,7 +399,7 @@
         "observability": "Yes",
         "offlineFriendly": "tbd",
         "openSource": "No",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "OIDC, SIOP",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2021",
@@ -480,12 +480,12 @@
         "company": "tbd",
         "openSource": "tbd",
         "connectionTypes": "tbd",
-        "peer2peerProtocols": "tbd",
-        "credExchangeProtocol": "tbd",
+        "peer2peerProtocols": "DIDComm",
+        "credExchangeProtocol": "Present Proof Protocol",
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "HyperLedger Indy",
+            "purpose": "Authorization, Credentials Schemas, Revocation registry"
         },
         "credentialFormat": "AnonCred",
         "selectiveDisclosure": "Yes",
@@ -612,13 +612,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "Hyperledger Indy",
+            "purpose": "Decentralized Public Key Infrastructure"
         },
         "company": "main incubator GmbH",
         "connectionTypes": "Connection-based",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol",
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
@@ -636,7 +636,7 @@
         "observability": "No",
         "offlineFriendly": "tbd",
         "openSource": "No",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "DIDComm",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
@@ -814,13 +814,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "Ethereum",
+            "purpose": "Anchor DID & DID Documents, Trust Registry, Revocation Registry"
         },
         "company": "Spherity GmbH",
         "connectionTypes": "tbd",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "OIDC4CI, OIDC4VP, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "JSON-LD",
         "cryptoAgility": "No",
         "deepLinking": "tbd",
@@ -838,7 +838,7 @@
         "observability": "No",
         "offlineFriendly": "tbd",
         "openSource": "No",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "OIDC, SIOP, DIDComm, DID Exchange Protocol",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Revocation 5539 + Status List 2021",
@@ -851,12 +851,12 @@
         "company": "tbd",
         "openSource": "tbd",
         "connectionTypes": "tbd",
-        "peer2peerProtocols": "tbd",
-        "credExchangeProtocol": "tbd",
+        "peer2peerProtocols": "OIDC, SIOP, DID Exchange Protocol",
+        "credExchangeProtocol": "OIDC4CI, OIDC4VP, Present Proof Protocol, Presentation Exchange",
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "Ethereum, ION, EBSI, PolygonID",
+            "purpose": "isdentiy, crypto"
         },
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
@@ -916,7 +916,7 @@
     {
         "blockchain": {
             "used": "Yes",
-            "type": "Hyperledger Indy (they mention Aries in the documenation?)",
+            "type": "Hyperledger Indy",
             "purpose": "tbd"
         },
         "company": "Trinsic (formerly: Streetcred ID Inc.)",
@@ -949,13 +949,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "EBSI, Alastria, Ethereum",
+            "purpose": "Trust Anchor, Trust registry, root of trust"
         },
         "company": "Validated ID",
         "connectionTypes": "tbd",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "OIDC4CI, OIDC4VP",
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "tbd",
@@ -973,7 +973,7 @@
         "observability": "Yes",
         "offlineFriendly": "tbd",
         "openSource": "tbd",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "OIDC, SIOP",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2021",
@@ -1086,7 +1086,7 @@
     {
         "blockchain": {
             "used": "Yes",
-            "type": "Ethereum (Based on vacancies and https://positiveblockchain.io/database/blockchain-helix/. On their own website they only mention ''Blockchain technology')",
+            "type": "Ethereum",
             "purpose": "tbd"
         },
         "company": "Blockchain Helix AG",
@@ -1187,13 +1187,13 @@
     },
     {
         "blockchain": {
-            "used": "No",
-            "type": "N/A",
-            "purpose": "N/A"
+            "used": "Yes",
+            "type": "ebsi, iota, cheqd, velocity",
+            "purpose": "EBSI - The aim of EBSI is to develop a secure and scalable blockchain infrastructure that can provide cross-border digital public services to citizens and businesses in Europe.\n\nIOTA - it's purpose is to provide a scalable, feeless, and decentralized transactional settlement and data transfer platform for the Internet of Things (IoT) ecosystem.\n\nVelocity - The purpose of the Velocity Network is to create a decentralized, global credentialing ecosystem that enables individuals to own, control, and securely share their verified career credentials while giving organizations access to a trusted talent marketplace.\n\nChqed - The purpose of the cheqd ecosystem is to provide a decentralized, privacy-preserving digital identity solution that allows individuals to have control over their personal data while enabling secure and verifiable credential exchange between individuals and organizations."
         },
         "company": "walt.id",
         "connectionTypes": "tbd",
-        "credExchangeProtocol": "tbd",
+        "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "credentialFormat": "JWT",
         "cryptoAgility": "Yes",
         "deepLinking": "tbd",
@@ -1210,7 +1210,7 @@
         "name": "walt.id",
         "offlineFriendly": "tbd",
         "openSource": "Yes",
-        "peer2peerProtocols": "tbd",
+        "peer2peerProtocols": "OIDC, SIOP",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Revocation not supported",
