@@ -78,7 +78,7 @@ The characteristics included are listed [above](#format). Here we will give a sh
 
 **keyHistory** is supported if it is possible to retain and obtain the history of keys related to a certain identifier.
 
-**keyRotation** is supported if the key refered to in a credential can be replaced by a new key.
+**keyRotation** is supported if the key referred to in a credential can be replaced by a new key.
 
 **observability** is about whether the verifier can observe the revocation status of the credential beyond the presentation.
 
@@ -86,8 +86,7 @@ The characteristics included are listed [above](#format). Here we will give a sh
 
 **postQuantumSecure** depends on the signature algorithm and indicates whether the signature algorithm could resist attacks by a quantum computer.
 
-**predicates** here depends on the credential format, namely can the credential format produce general-purpose predicates, i.e. attestations over the information without revealing the actual information.
-
+**predicates** are attestations about the information without revealing the actual information. This characteristic indicates whether the credential format can produce general-purpose predicates.
 **selectiveDisclosure** is about whether the credential format can present a subset of the claims in the credentials.
 
 **verifierUnlinkability** is about whether the verifier can correlate multiple presentation exchanges with the same holder, i.e. the verifier knows they are communicating with the same holder again. This is dependent of the signature algorithm and the holder's identifier.
