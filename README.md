@@ -70,9 +70,13 @@ If you want to add/change the logo, add the logo to `wallet-overview/static/` an
 
 The characteristics included are listed [above](#format). Here we will give a short description of characteristics that are not obvious from their name.
 
-**connectionTypes** list the types of connections the wallet can handle, i.e. either direct communication via QR-codes, bluetooth, etc. versus connection-based. The latter uses a persistent connection with another party, that is reused for new interactions.   
+**connectionTypes** list the types of connections the wallet can handle, i.e. either direct communication via QR-codes, bluetooth, etc. versus connection-based. The latter uses a persistent connection with another party, that is reused for new interactions.
+
+**cryptoAgility** is whether the credential format is capable of working with various signature algorithms.
 
 **deepLinking** allows for sending the user to the wallet app instead of to a website, such that the user can have a mobile-only workflow.
+
+**eassi** is whether the wallet connected to our [TNO EASSI gateway](https://eassi.ssi-lab.nl/).
 
 **hardwareSupport** is about whether the signature algorithm(s) is implemented in a commonly used cryptographic hardware modules, such as HSMs, TEEs, etc.
 
