@@ -27,12 +27,13 @@ def create_wallet_dict_old_part(cred_profiles:dict) -> dict:
             json_dict[row[1]] = {}
             json_dict[row[1]].update({'name':row[1]})
             json_dict[row[1]].update({'company':'tbd'})
-            json_dict[row[1]].update({'openSource':row[12]})
-            json_dict[row[1]].update({'connectionTypes':(', '.join(row[15].split(';')))})
+            json_dict[row[1]].update({'openSource':row[10]})
+            json_dict[row[1]].update({'connectionTypes':(', '.join(row[11].split(';')))})
 
             json_dict[row[1]].update({'peer2peerProtocols':(', '.join(row[16].split(';')))})
             json_dict[row[1]].update({'credExchangeProtocol':(', '.join(row[17].split(';')))})
             if row[18] == "Yes":
+                print(row[1], row[19], row[20])
                 json_dict[row[1]].update({'blockchain':{'used': 'Yes','type': row[19], 'purpose': row[20]}})
             else:
                 json_dict[row[1]].update({'blockchain':{'used': 'No','type': 'N/A', 'purpose': 'N/A'}})

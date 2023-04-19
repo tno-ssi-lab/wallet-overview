@@ -74,7 +74,7 @@
             "purpose": "Anchoring public DIDs for issuers and/or verifiers (ie: enabling trust registry)"
         },
         "company": "IOHK",
-        "connectionTypes": "Connection",
+        "connectionTypes": "Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
@@ -210,7 +210,7 @@
             "purpose": "Schema, CredentialDefinitions, DID, Revocation"
         },
         "company": "The Ego Company",
-        "connectionTypes": "tbd",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
@@ -380,7 +380,7 @@
             "purpose": "To anchor DIDs (legal entities), and to anchor the trust framework"
         },
         "company": "Gataca Inc.",
-        "connectionTypes": "tbd",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "credentialFormat": "LDP-VC",
         "cryptoAgility": "Yes",
@@ -478,8 +478,8 @@
     {
         "name": "Identry",
         "company": "tbd",
-        "openSource": "tbd",
-        "connectionTypes": "tbd",
+        "openSource": "No",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "peer2peerProtocols": "DIDComm",
         "credExchangeProtocol": "Present Proof Protocol",
         "blockchain": {
@@ -617,7 +617,7 @@
             "purpose": "Decentralized Public Key Infrastructure"
         },
         "company": "main incubator GmbH",
-        "connectionTypes": "Connection-based",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol",
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
@@ -819,7 +819,7 @@
             "purpose": "Anchor DID & DID Documents, Trust Registry, Revocation Registry"
         },
         "company": "Spherity GmbH",
-        "connectionTypes": "tbd",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
         "credentialFormat": "JSON-LD",
         "cryptoAgility": "No",
@@ -849,8 +849,8 @@
     {
         "name": "Talao - Altme (2 wallets)",
         "company": "tbd",
-        "openSource": "tbd",
-        "connectionTypes": "tbd",
+        "openSource": "Yes",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "peer2peerProtocols": "OIDC, SIOP, DID Exchange Protocol",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Present Proof Protocol, Presentation Exchange",
         "blockchain": {
@@ -954,7 +954,7 @@
             "purpose": "Trust Anchor, Trust registry, root of trust"
         },
         "company": "Validated ID",
-        "connectionTypes": "tbd",
+        "connectionTypes": "both",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP",
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
@@ -972,7 +972,7 @@
         "name": "VIDwallet",
         "observability": "Yes",
         "offlineFriendly": "tbd",
-        "openSource": "tbd",
+        "openSource": "No",
         "peer2peerProtocols": "OIDC, SIOP",
         "postQuantumSecure": "No",
         "predicates": "No",
@@ -1192,7 +1192,7 @@
             "purpose": "EBSI - The aim of EBSI is to develop a secure and scalable blockchain infrastructure that can provide cross-border digital public services to citizens and businesses in Europe.\n\nIOTA - it's purpose is to provide a scalable, feeless, and decentralized transactional settlement and data transfer platform for the Internet of Things (IoT) ecosystem.\n\nVelocity - The purpose of the Velocity Network is to create a decentralized, global credentialing ecosystem that enables individuals to own, control, and securely share their verified career credentials while giving organizations access to a trusted talent marketplace.\n\nChqed - The purpose of the cheqd ecosystem is to provide a decentralized, privacy-preserving digital identity solution that allows individuals to have control over their personal data while enabling secure and verifiable credential exchange between individuals and organizations."
         },
         "company": "walt.id",
-        "connectionTypes": "tbd",
+        "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "credentialFormat": "JWT",
         "cryptoAgility": "Yes",
