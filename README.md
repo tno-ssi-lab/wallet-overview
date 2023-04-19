@@ -11,6 +11,8 @@ The overview serves the following purposes:
 - It offers insight in which wallets are interoperable with each other.
 - It allows us to prioritise for which wallet a connector to our [TNO EASSI gateway](https://eassi.ssi-lab.nl/) should be developed.
 
+See [below](#characteristics) for a description of the characteristics included.
+
 ## How to contribute
 You can contribute to the overview by:
 - Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
@@ -62,3 +64,30 @@ If you want to add/change the logo, add the logo to `wallet-overview/static/` an
         "signatureAlgorithm": "",
         "verifierUnlinkability": ""
     },
+
+<h3 id="characteristics">Characteristics</h3>
+
+The characteristics included are listed [above](#format). Here we will give a short description of characteristics that are not obvious from their name.
+
+**connectionTypes** list the types of connections the wallet can handle, i.e. either direct communication via QR-codes, bluetooth, etc. versus communication-based. The latter uses a persistent connection with another party, that is reused for new interactions.
+
+**deepLinking** is when the wallet allows for a completely mobile workflow only.
+
+**hardwareSupport** is about whether the signature algorithm(s) is implemented in a commonly used cryptographic hardware modules, such as HSMs, TEEs, etc.
+
+**keyHistory** is supported if it is possible to retain and obtain the history of keys related to a certain identifier.
+
+**keyRotation** is supported if the key refered to in a credential can be replaced by a new key.
+
+**observability** is about whether the verifier can observe the revocation status of the credential beyond the presentation.
+
+**offlineFriendly** is about whether the revocation algorithm allows for offline checking the status of the credential.
+
+**postQuantumSecure** depends on the signature algorithm and indicates whether the signature algorithm could resist attacks by a quantum computer.
+
+**predicates** here depends on the credential format, namely can the credential format produce general-purpose predicates, i.e. attestations over the information without revealing the actual information.
+
+**selectiveDisclosure** is about whether the credential format can present a subset of the claims in the credentials.
+
+**verifierUnlinkability** is about whether the verifier can correlate multiple presentation exchanges with the same holder, i.e. the verifier knows they are communicating with the same holder again. This is dependent of the signature algorithm and the holder's identifier.
+
