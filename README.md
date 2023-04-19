@@ -87,7 +87,8 @@ The characteristics included are listed [above](#format). Here we will give a sh
 **postQuantumSecure** depends on the signature algorithm and indicates whether the signature algorithm could resist attacks by a quantum computer.
 
 **predicates** are attestations about the information without revealing the actual information. This characteristic indicates whether the credential format can produce general-purpose predicates.
+
 **selectiveDisclosure** is about whether the credential format can present a subset of the claims in the credentials.
 
-**verifierUnlinkability** is about whether the verifier can correlate multiple presentation exchanges with the same holder, i.e. the verifier knows they are communicating with the same holder again. This is dependent of the signature algorithm and the holder's identifier.
+**verifierUnlinkability** is when the verifier cannot correlate multiple presentation exchanges with the same holder, i.e. the verifier does not know they are communicating with the same holder again. This depends on the signature algorithm and the holder's identifier.
 
