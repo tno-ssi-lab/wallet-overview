@@ -28,6 +28,7 @@ Note that you can't add new types of characteristics. If you feel that a new cha
 After your merge request has been accepted, you will see the updated version of the overview on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/). If you want to see locally what the modified HTML looks like, open a terminal in your local copy of the repository and type `python -m http.server 8080`, then you should see the modified overview [here](http://localhost:8080/).
 
 <h3 id="format">Format</h3>
+
 If you want to add/change the logo, add the logo to `wallet-overview/static/` and change `"logo": "static/<your-wallet>.png"`.
 
     {
