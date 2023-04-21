@@ -47,10 +47,26 @@ tr:nth-child(odd) td {
 	background-color: white;
 }
 
+table {
+	margin-top: 0;
+}
+
 table img{
 	width:  100%;
 }
 
+table thead tr th::before {
+	content:'';
+	position:absolute;
+	left: 0;
+	top: -1px;
+	width:100%;
+	border-top: 1px solid #ccc;
+}
+
+table thead tr th {
+	white-space: nowrap;
+}
 
 table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
 	position: sticky;
@@ -72,6 +88,7 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 }
 
 .tableFixHead {
+	margin-top: 35px;
 	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
 	height: 95vh; /* s.t. scroll bar is visible */
   }
