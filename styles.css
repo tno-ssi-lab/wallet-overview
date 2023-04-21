@@ -35,12 +35,40 @@ table td{
 	/* background-color: #fff; */
 }
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
 	background-color: rgb(224, 232, 232);
+} */
+
+tr:nth-child(even) td {
+	background-color: rgb(224, 232, 232);
+}
+
+tr:nth-child(odd) td {
+	background-color: white;
 }
 
 table img{
 	width:  100%;
+}
+
+
+table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
+	position: sticky;
+	left: 0;
+	z-index: 1;
+}
+
+table thead tr th:nth-child(2) { /* keep column header in front of column content when scrolling */
+	z-index: 2;
+}
+
+table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /* fix for keeping column border visible in combination with position sticky */
+	content:'';
+	position:absolute;
+	top: 0;
+	right: -1px;
+	height:100%;
+	border-right: 1px solid #ccc;
 }
 
 .tableFixHead {
