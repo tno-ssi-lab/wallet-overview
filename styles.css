@@ -6,7 +6,8 @@
 
 body{
 	font-family: sans-serif;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	height: calc(100vh - 30px);
 	color: #555555;
 }
 
@@ -90,7 +91,7 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 .tableFixHead {
 	margin-top: 35px;
 	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
-	height: 95vh; /* s.t. scroll bar is visible */
+	height: calc(100vh - 2em - 50px - 10px); /* s.t. scroll bar is visible */
   }
   .tableFixHead thead th {
 	position: sticky; /* make the table heads sticky */
