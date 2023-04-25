@@ -988,40 +988,6 @@
     {
         "blockchain": {
             "purpose": "-",
-            "type": "Hyperledger Indy",
-            "used": "Yes"
-        },
-        "company": "Trinsic (formerly: Streetcred ID Inc.)",
-        "connectionTypes": "Connection-based",
-        "credExchangeProtocol": "-",
-        "credentialFormat": "-",
-        "cryptoAgility": "-",
-        "deepLinking": "Yes",
-        "eassi": "yes",
-        "encodingScheme": "-",
-        "hardwareSupport": "-",
-        "identifierHolder": "-",
-        "identifierIssuer": "-",
-        "keyHistoryHolder": "-",
-        "keyHistoryIssuer": "-",
-        "keyRotationHolder": "-",
-        "keyRotationIssuer": "-",
-        "logo": "static/trinsic-wallet.png",
-        "name": "Trinsic Wallet",
-        "observability": "-",
-        "offlineFriendly": "-",
-        "openSource": "No (but commited to utilize open source SSI codebases)",
-        "peer2peerProtocols": "-",
-        "postQuantumSecure": "-",
-        "predicates": "-",
-        "revocationAlgorithm": "-",
-        "selectiveDisclosure": "-",
-        "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
-    },
-    {
-        "blockchain": {
-            "purpose": "-",
             "type": "Ethereum",
             "used": "Yes"
         },
