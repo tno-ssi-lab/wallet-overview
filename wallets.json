@@ -1,10 +1,8 @@
 [
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "AceBlock blockchain framework",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "AceBlock blockchain framework",
+        "blockchainUsed": "Yes",
         "company": "AceBlock",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -34,11 +32,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "-",
         "company": "-",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -68,11 +64,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Anchoring public DIDs for issuers and/or verifiers (ie: enabling trust registry)",
-            "type": "Cardano",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Anchoring public DIDs for issuers and/or verifiers (ie: enabling trust registry)",
+        "blockchainType": "Cardano",
+        "blockchainUsed": "Yes",
         "company": "IOHK",
         "connectionTypes": "Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
@@ -102,11 +96,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Bitcoin and Ethereum, with Merkle proof linking credential to blockchain transaction",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Bitcoin and Ethereum, with Merkle proof linking credential to blockchain transaction",
+        "blockchainUsed": "Yes",
         "company": "Hyland Credentials (formerly: Learning Machine)",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -136,11 +128,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Ethereum or Blockpass",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Ethereum or Blockpass",
+        "blockchainUsed": "Yes",
         "company": "Blockpass IDN",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -170,11 +160,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "?",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "?",
+        "blockchainUsed": "-",
         "company": "Bloom",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -204,11 +192,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Schema, CredentialDefinitions, DID, Revocation",
-            "type": "Hyperledger Indy",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Schema, CredentialDefinitions, DID, Revocation",
+        "blockchainType": "Hyperledger Indy",
+        "blockchainUsed": "Yes",
         "company": "The Ego Company",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
@@ -238,11 +224,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Hyperledger Indy and Hyperledger Ursa",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Hyperledger Indy and Hyperledger Ursa",
+        "blockchainUsed": "Yes",
         "company": "Evernym",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -272,11 +256,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "For publishing schema IDs, credential def IDs and public DID",
-            "type": "Hyperledger Indy, Ethereum, EBSI blockchain",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "For publishing schema IDs, credential def IDs and public DID",
+        "blockchainType": "Hyperledger Indy, Ethereum, EBSI blockchain",
+        "blockchainUsed": "Yes",
         "company": "iGrant.io",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange, DEXA",
@@ -306,11 +288,9 @@
         "verifierUnlinkability": "Yes"
     },
     {
-        "blockchain": {
-            "purpose": "N/A",
-            "type": "N/A",
-            "used": "No"
-        },
+        "blockchainPurpose": "N/A",
+        "blockchainType": "N/A",
+        "blockchainUsed": "No",
         "company": "Rabobank Nederland",
         "connectionTypes": "Direct communication",
         "credExchangeProtocol": "Datakeeper protocol (Verifiable Presentation)",
@@ -340,11 +320,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "ArcBlock's own blockchain and comprehensive support for the Ethereum ecosystem.",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "ArcBlock's own blockchain and comprehensive support for the Ethereum ecosystem.",
+        "blockchainUsed": "Yes",
         "company": "ArcBlock",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -374,11 +352,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "N/A",
-            "type": "N/A",
-            "used": "No"
-        },
+        "blockchainPurpose": "N/A",
+        "blockchainType": "N/A",
+        "blockchainUsed": "No",
         "company": "esatus AG",
         "connectionTypes": "Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
@@ -408,11 +384,9 @@
         "verifierUnlinkability": "Yes"
     },
     {
-        "blockchain": {
-            "purpose": "To anchor DIDs (legal entities), and to anchor the trust framework",
-            "type": "We are agnostic to the infra, so the platform right now supports Ethereum, Fabric and EBSI",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "To anchor DIDs (legal entities), and to anchor the trust framework",
+        "blockchainType": "We are agnostic to the infra, so the platform right now supports Ethereum, Fabric and EBSI",
+        "blockchainUsed": "Yes",
         "company": "Gataca Inc.",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
@@ -442,11 +416,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "Yes",
         "company": "Gimly",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -476,11 +448,10 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "used": "Yes",
-            "type": "public permissioned Ethereum, IPFS",
-            "purpose": "No personal data"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "public permissioned Ethereum, IPFS",
+        "blockchainUsed": "Yes",
+        "purpose": "No personal data",
         "company": "Blockchain Helix AG",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
@@ -510,11 +481,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "-",
         "company": "-",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -544,11 +513,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "-",
         "company": "-",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -578,11 +545,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Authorization, Credentials Schemas, Revocation registry",
-            "type": "HyperLedger Indy",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Authorization, Credentials Schemas, Revocation registry",
+        "blockchainType": "HyperLedger Indy",
+        "blockchainUsed": "Yes",
         "company": "-",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "Present Proof Protocol",
@@ -612,11 +577,9 @@
         "verifierUnlinkability": "Yes"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Ethereum",
+        "blockchainUsed": "Yes",
         "company": "Jolocom GmbH",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -646,11 +609,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Blockchain network based on Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Blockchain network based on Ethereum",
+        "blockchainUsed": "Yes",
         "company": "KayTrust",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -680,11 +641,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Decentralized Public Key Infrastructure",
-            "type": "Hyperledger Indy",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Decentralized Public Key Infrastructure",
+        "blockchainType": "Hyperledger Indy",
+        "blockchainUsed": "Yes",
         "company": "main incubator GmbH",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, soon: OpenID4VCI and OpenID4VP",
@@ -714,11 +673,9 @@
         "verifierUnlinkability": "Yes"
     },
     {
-        "blockchain": {
-            "purpose": "Storing public keys",
-            "type": "ION - if ION DID menthod used",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Storing public keys",
+        "blockchainType": "ION - if ION DID menthod used",
+        "blockchainUsed": "Yes",
         "company": "Mattr Limited",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI",
@@ -748,11 +705,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "-",
         "company": "Microsoft",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -782,11 +737,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Scale up for DID",
-            "type": "Metadium",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Scale up for DID",
+        "blockchainType": "Metadium",
+        "blockchainUsed": "Yes",
         "company": "Metadium Technology Inc",
         "connectionTypes": "Direct communication",
         "credExchangeProtocol": "N/A",
@@ -816,11 +769,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Ethereum",
+        "blockchainUsed": "Yes",
         "company": "Selfkey Foundation",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -850,11 +801,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "N/A",
-            "type": "N/A",
-            "used": "No"
-        },
+        "blockchainPurpose": "N/A",
+        "blockchainType": "N/A",
+        "blockchainUsed": "No",
         "company": "-",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
@@ -884,11 +833,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "Anchor DID & DID Documents, Trust Registry, Revocation Registry",
-            "type": "Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Anchor DID & DID Documents, Trust Registry, Revocation Registry",
+        "blockchainType": "Ethereum",
+        "blockchainUsed": "Yes",
         "company": "Spherity GmbH",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
@@ -918,11 +865,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "identity, crypto",
-            "type": "Ethereum, ION, EBSI, PolygonID",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "identity, crypto",
+        "blockchainType": "Ethereum, ION, EBSI, PolygonID",
+        "blockchainUsed": "Yes",
         "company": "Talao",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Present Proof Protocol, Presentation Exchange",
@@ -952,11 +897,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "Ethereum",
+        "blockchainUsed": "Yes",
         "company": "uPort",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -986,11 +929,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "Trust Anchor, Trust registry, root of trust",
-            "type": "EBSI, Alastria, Ethereum",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Trust Anchor, Trust registry, root of trust",
+        "blockchainType": "EBSI, Alastria, Ethereum",
+        "blockchainUsed": "Yes",
         "company": "Validated ID",
         "connectionTypes": "both",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP",
@@ -1020,11 +961,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "EBSI - The aim of EBSI is to develop a secure and scalable blockchain infrastructure that can provide cross-border digital public services to citizens and businesses in Europe.\n\nIOTA - it's purpose is to provide a scalable, feeless, and decentralized transactional settlement and data transfer platform for the Internet of Things (IoT) ecosystem.\n\nVelocity - The purpose of the Velocity Network is to create a decentralized, global credentialing ecosystem that enables individuals to own, control, and securely share their verified career credentials while giving organizations access to a trusted talent marketplace.\n\nChqed - The purpose of the cheqd ecosystem is to provide a decentralized, privacy-preserving digital identity solution that allows individuals to have control over their personal data while enabling secure and verifiable credential exchange between individuals and organizations.",
-            "type": "ebsi, iota, cheqd, velocity",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "EBSI - The aim of EBSI is to develop a secure and scalable blockchain infrastructure that can provide cross-border digital public services to citizens and businesses in Europe.\n\nIOTA - it's purpose is to provide a scalable, feeless, and decentralized transactional settlement and data transfer platform for the Internet of Things (IoT) ecosystem.\n\nVelocity - The purpose of the Velocity Network is to create a decentralized, global credentialing ecosystem that enables individuals to own, control, and securely share their verified career credentials while giving organizations access to a trusted talent marketplace.\n\nChqed - The purpose of the cheqd ecosystem is to provide a decentralized, privacy-preserving digital identity solution that allows individuals to have control over their personal data while enabling secure and verifiable credential exchange between individuals and organizations.",
+        "blockchainType": "ebsi, iota, cheqd, velocity",
+        "blockchainUsed": "Yes",
         "company": "walt.id",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
@@ -1054,11 +993,9 @@
         "verifierUnlinkability": "No"
     },
     {
-        "blockchain": {
-            "purpose": "-",
-            "type": "",
-            "used": "-"
-        },
+        "blockchainPurpose": "-",
+        "blockchainType": "",
+        "blockchainUsed": "-",
         "company": "-",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
@@ -1088,11 +1025,9 @@
         "verifierUnlinkability": "-"
     },
     {
-        "blockchain": {
-            "purpose": "N/A",
-            "type": "N/A",
-            "used": "No"
-        },
+        "blockchainPurpose": "N/A",
+        "blockchainType": "N/A",
+        "blockchainUsed": "No",
         "company": "Privacy by Design Foundation",
         "connectionTypes": "Direct communication, Interpreted as direct wallet to IDP and wallet to RP connections. No communication through centralized components in our infrastructure. IRMA is fully decentralized. ",
         "credExchangeProtocol": "IRMA protocol",
@@ -1122,11 +1057,9 @@
         "verifierUnlinkability": "Yes"
     },
     {
-        "blockchain": {
-            "purpose": "Public DIDs and associated DID documents with verification keys and endpoints, schemas and credential definitions, revocation registries, agent authorisation policies",
-            "type": "Sovrin",
-            "used": "Yes"
-        },
+        "blockchainPurpose": "Public DIDs and associated DID documents with verification keys and endpoints, schemas and credential definitions, revocation registries, agent authorisation policies",
+        "blockchainType": "Sovrin",
+        "blockchainUsed": "Yes",
         "company": "ZADA Solutions",
         "connectionTypes": "-",
         "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",

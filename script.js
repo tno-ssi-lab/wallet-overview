@@ -1,3 +1,29 @@
+const columns = {
+  logo: '',
+  name: '',
+  company: '',
+  openSource: '',
+  eassi: '',
+  credentialFormat: '',
+  encodingScheme: '',
+  signatureAlgorithm: '',
+  identifierHolder: '',
+  identifierIssuer: '',
+  revocationAlgorithm: '',
+  peer2peerProtocols: '',
+  blockchainUsed: '',
+  blockchainType: 'class="td-wrap"',
+  blockchainPurpose: 'class="td-wrap"',
+  credExchangeProtocol: '',
+  connectionTypes: '',
+  deepLinking: '',
+  offlineFriendly: '',
+  selectiveDisclosure: '',
+  predicates: '',
+  verifierUnlinkability: '',
+  cryptoAgility: '',
+  postQuantumSecure: '',
+}
 
 fetch("wallets.json")
 .then(function(response){
@@ -7,39 +33,12 @@ fetch("wallets.json")
 	let placeholder = document.querySelector("#data-output");
 	let out = "";
 	for(let wallet of wallets){
-		out += `
-			<tr>
-				<td><img src='${wallet.logo}'></td>
-				<td>${wallet.name}</td>	
-				<td>${wallet.company}</td>
-				<td>${wallet.openSource}</td>
-				<td>${wallet.eassi}</td>
-				<td>${wallet.credentialFormat}</td>
-				<td>${wallet.encodingScheme}</td>
-				<td>${wallet.signatureAlgorithm}</td>
-				<td>${wallet.identifierHolder}</td>
-				<td>${wallet.identifierIssuer}</td>
-				<td>${wallet.revocationAlgorithm}</td>
-				<td>${wallet.peer2peerProtocols}</td>
-				<td>${wallet.blockchain.used}</td>
-				<td class="td-wrap">${wallet.blockchain.type}</td>
-				<td class="td-wrap">${wallet.blockchain.purpose}</td>
-				<td>${wallet.credExchangeProtocol}</td>
-				<td>${wallet.connectionTypes}</td>
-				<td>${wallet.deepLinking}</td>
-				<td>${wallet.offlineFriendly}</td>
-				<td>${wallet.selectiveDisclosure}</td>
-				<td>${wallet.predicates}</td>
-				<td>${wallet.verifierUnlinkability}</td>
-				<td>${wallet.cryptoAgility}</td>
-				<td>${wallet.postQuantumSecure}</td>
-			</tr>
-		`;
+		out += `<tr><td><img src='${wallet.logo}'></td>`
+		for (let param in columns) {
+			out += `<td ${columns[param]}>${wallet[param]}</td>`
+		}
+		out += '</tr>\n';
 	}
 
 	placeholder.innerHTML = out;
 });
-				// <td>${wallet.blockchain.type}</td>
-				// <td>${wallet.blockchain.purpose}</td>
-				// needs wrapping!
-				// <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:200px;">${wallet.encodingScheme}</td>
