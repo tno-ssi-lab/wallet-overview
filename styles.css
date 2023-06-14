@@ -69,17 +69,17 @@ table thead tr th {
 	white-space: nowrap;
 }
 
-table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
+table thead tr th:nth-child(3), table tbody tr td:nth-child(3) { /* make the second table column sticky */
 	position: sticky;
 	left: 0;
 	z-index: 1;
 }
 
-table thead tr th:nth-child(2) { /* keep column header in front of column content when scrolling */
+table thead tr th:nth-child(3) { /* keep column header in front of column content when scrolling */
 	z-index: 2;
 }
 
-table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /* fix for keeping column border visible in combination with position sticky */
+table thead tr th:nth-child(3)::after, table tbody tr td:nth-child(3)::after { /* fix for keeping column border visible in combination with position sticky */
 	content:'';
 	position:absolute;
 	top: 0;

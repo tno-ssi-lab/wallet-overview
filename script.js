@@ -52,8 +52,8 @@ const columns = {
 // console.log(JSON.stringify(template, null, 4))
 
 let headerPlaceholder = document.querySelector("#table-headers")
-let ths = '<tr>'
-let count = 0
+let ths = '<tr><th>#</th>'
+let count = 1
 for (let col in columns) {
   ths += `<th title="${columns[col].title}">${columns[col].header}`
   if (columns[col].type != 'img') {
@@ -72,8 +72,9 @@ fetch("wallets.json")
 .then(function(wallets){
 	let placeholder = document.querySelector("#data-output")
 	let out = ""
+  let rowCount = 0
 	for(let wallet of wallets){
-		out += '<tr>'
+		out += `<tr><td>${++rowCount}</td>`
 		for (let param in columns) {
       if (wallet[param] === undefined || wallet[param] === '') {
         out += '<td>-</td>'
