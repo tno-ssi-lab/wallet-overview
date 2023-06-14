@@ -44,6 +44,11 @@ const columns = {
   email: {header: 'Contact e-mail', title: 'Address for general and commercial enquiries', type: 'mail'},
   supportEmail: {header: 'Support e-mail', title: 'Address for support requests', type: 'mail'},
 }
+/* the rows below display a JSON template with the keys in alphabetical order – e.g., for updating README.md */
+// const template = {}
+// Object.keys(columns).sort().map(key => {template[key] = ''})
+// console.log(JSON.stringify(template, null, 4))
+
 let headerPlaceholder = document.querySelector("#table-headers")
 let ths = '<tr>'
 let count = 0
