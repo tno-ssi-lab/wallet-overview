@@ -3,6 +3,8 @@ const columns = {
   name: {header: 'Wallet', title: ''},
   company: {header: 'Company', title: ''},
   scope: {header: 'Scope', title: 'Is there a national, industry doman, or other specific scope?', class: 'td-wrap'},
+  users: {header: 'Target users', title: 'Targeted for individuals, companies, developers, ...'},
+  deployment: {header: 'Deployment', title: 'Where it\'s run? Mobile, SaaS, self-hosted, ...'},
   isHolderWallet: {header: 'Holder Wallet', title: 'Can hold and present verifiable credentials?'},
   isIssuerAgent: {header: 'Issuer Agent', title: 'Can issue verifiable credentials?'},
   isVerifierAgent: {header: 'Verifier Agent', title: 'Can verify verifiable credentials?'},
