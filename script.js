@@ -50,7 +50,7 @@ const columns = {
 }
 /* the rows below display a JSON template with the keys in alphabetical order – e.g., for updating README.md */
 // const template = {}
-// Object.keys(columns).sort().map(key => {template[key] = ''})
+// Object.keys(columns).map(key => {template[key] = ''})
 // console.log(JSON.stringify(template, null, 4))
 
 let headerPlaceholder = document.querySelector("#table-headers")
