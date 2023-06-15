@@ -78,7 +78,7 @@ fetch("wallets.json")
 	for(let wallet of wallets){
 		out += `<tr><td>${++rowCount}</td>`
 		for (let param in columns) {
-      if (wallet[param] === undefined || wallet[param] === '') {
+      if (wallet[param] === undefined || wallet[param] === '' || wallet[param] === '-') {
         out += '<td>-</td>'
         continue
       }
@@ -86,14 +86,14 @@ fetch("wallets.json")
         case 'img':
           out += `<td><img src='${wallet[param]}'></td>`
           break
-          case 'link':
-            out += `<td><a href="${wallet[param]}">${wallet[param]}</a></td>`
-            break;
-          case 'mail':
-            out += `<td><a href="mailto:${wallet[param]}">${wallet[param]}</a></td>`
-            break;
-          default:
-            out += `<td class="${columns[param].class}">${wallet[param]}</td>`
+        case 'link':
+          out += `<td><a href="${wallet[param]}">${wallet[param]}</a></td>`
+          break;
+        case 'mail':
+          out += `<td><a href="mailto:${wallet[param]}">${wallet[param]}</a></td>`
+          break;
+        default:
+          out += `<td class="${columns[param].class}">${wallet[param]}</td>`
       }
 		}
 		out += '</tr>\n'
