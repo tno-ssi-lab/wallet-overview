@@ -127,3 +127,24 @@ table thead tr th:nth-child(3)::after, table tbody tr td:nth-child(3)::after { /
 	background-color: transparent;
 	border: transparent;
 }
+
+a.download {
+	background-color: #EEE;
+	border: 2px outset #CCC;
+	border-radius: 0.25em;
+	color: #000;
+	display: block;
+	margin: 0;
+	padding: 0.5em;
+	position: fixed;
+	text-align: center;
+	text-decoration: none;
+	top: 1em;
+	width: 8em;
+}
+
+a.clicked {
+	background-color: #DDD;
+	border-style: inset;
+	padding: 0.6em 0.4em 0.4em 0.6em;
+}

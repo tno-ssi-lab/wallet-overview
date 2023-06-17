@@ -27,6 +27,27 @@
 	</div>
 
 	<script>
+
+	const dType = 'application/vnd.ms-excel'
+	const fName = 'wallet-overview.xls'
+	const tbl = document.getElementById('myTable')
+	const a = document.createElement('a')
+	a.appendChild(document.createTextNode('Open in Excel'))
+	a.className = 'download'
+	a.download = fName
+	a.href = `data:${dType}, ${tbl.outerHTML.replace(/ /, '%20')}`
+	a.onclick = function(e) {
+		const tableData = tbl.outerHTML.replace(/<img[^>]*src="([^"]*)"[^>]*>/g, '$1')
+		this.href = `data:${dType},${encodeURIComponent(tableData)}`
+	}
+	a.onmousedown = function(e) {
+		this.classList.add('clicked')
+	}
+	a.onmouseup = a.onblur = function(e) {
+		this.classList.remove('clicked')
+	}
+	tbl.parentNode.insertBefore(a, tbl)
+
 	function sortTable(n) {
 	  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
 	  table = document.getElementById("myTable");
