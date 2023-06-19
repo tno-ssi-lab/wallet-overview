@@ -54,12 +54,12 @@ const columns = {
 // console.log(JSON.stringify(template, null, 4))
 
 let headerPlaceholder = document.querySelector("#table-headers")
-let ths = '<tr><th>#</th>'
+let ths = `<tr onclick="this.classList.toggle('verbose')"><th>#</th>`
 let count = 1
 for (let col in columns) {
   ths += `<th title="${columns[col].title}">${columns[col].header}`
   if (columns[col].type != 'img') {
-    ths += ` <button class="btn" onclick="sortTable(${count})"><i class="fa-solid fa-sort"></i></button>`
+    ths += ` <button class="btn" onclick="arguments[0]?.stopPropagation(); sortTable(${count})"><i class="fa-solid fa-sort"></i></button>`
   }
   ths += `</th>`
   count++

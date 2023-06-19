@@ -92,20 +92,20 @@ table thead tr th:nth-child(3)::after, table tbody tr td:nth-child(3)::after { /
 	margin-top: 35px;
 	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
 	height: calc(100vh - 2em - 50px - 10px); /* s.t. scroll bar is visible */
-  }
-  .tableFixHead thead th {
+}
+.tableFixHead thead th {
 	position: sticky; /* make the table heads sticky */
 	top: 0px; /* table head will be placed from the top of the table and sticks to it */
-  }
-  table {
+}
+table {
 	border-collapse: collapse; /* make the table borders collapse to each other */
 	width: 100%;
-  }
-  th,
-  td {
+}
+th,
+td {
 	padding: 8px 16px;
 	border: 1px solid #ccc;
-  }
+}
 
 .td-wrap{ /* for text wrapping */
 	text-overflow: ellipsis;
@@ -116,6 +116,19 @@ table thead tr th:nth-child(3)::after, table tbody tr td:nth-child(3)::after { /
 
 .td-wrap:hover{
     white-space: pre-wrap;
+}
+
+tr.verbose th {
+	vertical-align: top;
+}
+
+tr.verbose th::after {
+	content: attr(title);
+	display: block;
+	font-size: smaller;
+	font-style: italic;
+	font-weight: normal;
+	white-space: pre-wrap;
 }
 
 /* .icon{
