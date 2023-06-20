@@ -11,8 +11,6 @@ The overview serves the following purposes:
 - It offers insight in which wallets are interoperable with each other.
 - It allows us to prioritise for which wallet a connector to our [TNO EASSI gateway](https://eassi.ssi-lab.nl/) should be developed.
 
-See [below](#characteristics) for a description of the characteristics included.
-
 ## How to contribute
 You can contribute to the overview by:
 - Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
@@ -31,9 +29,8 @@ After your merge request has been accepted, you will see the updated version of 
 
 If you want to add/change the logo, add the logo to [static/](static/) and change `"logo": "static/<your-wallet>.png"`.
 
-Descriptions of fields can be seen on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/) or in [script.js](script.js).
+Descriptions of the fields are given on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/) by clicking on the top row, in [script.js](script.js) or below in [characteristics](#characteristics).
 
-```json
 {
     "logo": "",
     "name": "",
@@ -83,7 +80,7 @@ Descriptions of fields can be seen on the [overview page](https://tno-ssi-lab.gi
     "webApp": "",
     "email": "",
     "supportEmail": ""
-}```
+},
 
 <h3 id="characteristics">Characteristics</h3>
 
