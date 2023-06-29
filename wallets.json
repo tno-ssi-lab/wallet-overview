@@ -851,6 +851,40 @@
     },
     {
         "blockchain": {
+            "used": "Yes",
+            "type": "Hyperlager, Cardano",
+            "purpose": "For public info only: Schema, CredentialDefinitions, DID, Revocation"
+        },
+        "company": "",
+        "connectionTypes": "Direct communication, Connection-based communication",
+        "credExchangeProtocol": "Issue Credential Protocol, Present Proof Protocol, Presentation Exchange",
+        "credentialFormat": "AnonCred, JWT-VC",
+        "cryptoAgility": "",
+        "deepLinking": "Yes",
+        "eassi": "",
+        "encodingScheme": "",
+        "hardwareSupport": "",
+        "identifierHolder": "Link secret, did:proofspace, did:prism",
+        "identifierIssuer": "Link secret, did:proofspace, did:prism",
+        "keyHistoryHolder": "",
+        "keyHistoryIssuer": "",
+        "keyRotationHolder": "",
+        "keyRotationIssuer": "",
+        "logo": "",
+        "name": "ProofSpace",
+        "observability": "",
+        "offlineFriendly": "No, but soon",
+        "openSource": "Uses open sourced Indy SDK",
+        "peer2peerProtocols": "OIDC, DID Exchange Protocol, SSI OAuth",
+        "postQuantumSecure": "",
+        "predicates": "Yes",
+        "revocationAlgorithm": "Indy revocation, soon: Revocation List 2021",
+        "selectiveDisclosure": "Yes",
+        "signatureAlgorithm": "CL, ECDSA, ECDSA for Atala Prism",
+        "verifierUnlinkability": ""
+    },
+    {
+        "blockchain": {
             "purpose": "-",
             "type": "Ethereum",
             "used": "Yes"
