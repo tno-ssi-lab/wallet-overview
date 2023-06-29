@@ -19,9 +19,9 @@ You can contribute to the overview by:
 - Sharing this repository in your network.
 - Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 
-<h3 id="modifying-json">Modifying <code>wallets.json </code></h3>
+<h3 id="modifying-json">Modifying <code>wallets.json</code></h3>
 
-To update the overview, you just have to update `wallets.json`. Search for your wallet and update the characteristic(s) you want to change. If you want to add a new wallet, add and fill in the [format](#format) to `wallets.json`.
+To update the overview, you just have to update [wallets.json](wallets.json). Search for your wallet and update the characteristic(s) you want to change. If you want to add a new wallet, add and fill in the [format](#format) to `wallets.json`.
 
 Note that you can't add new types of characteristics. If you feel that a new characteristic should be added, create an [issue](https://github.com/tno-ssi-lab/wallet-overview/issues/new).
 
@@ -29,42 +29,61 @@ After your merge request has been accepted, you will see the updated version of 
 
 <h3 id="format">Format</h3>
 
-If you want to add/change the logo, add the logo to `wallet-overview/static/` and change `"logo": "static/<your-wallet>.png"`.
+If you want to add/change the logo, add the logo to [static/](static/) and change `"logo": "static/<your-wallet>.png"`.
 
-    {
-        "blockchain": {
-            "used": "",
-            "type": "",
-            "purpose": ""
-        },
-        "company": "",
-        "connectionTypes": "",
-        "credExchangeProtocol": "",
-        "credentialFormat": "",
-        "cryptoAgility": "",
-        "deepLinking": "",
-        "eassi": "",
-        "encodingScheme": "",
-        "hardwareSupport": "",
-        "identifierHolder": "",
-        "identifierIssuer": "",
-        "keyHistoryHolder": "",
-        "keyHistoryIssuer": "",
-        "keyRotationHolder": "",
-        "keyRotationIssuer": "",
-        "logo": "",
-        "name": "",
-        "observability": "",
-        "offlineFriendly": "",
-        "openSource": "",
-        "peer2peerProtocols": "",
-        "postQuantumSecure": "",
-        "predicates": "",
-        "revocationAlgorithm": "",
-        "selectiveDisclosure": "",
-        "signatureAlgorithm": "",
-        "verifierUnlinkability": ""
-    },
+Descriptions of fields can be seen on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/) or in [script.js](script.js).
+
+```json
+{
+    "logo": "",
+    "name": "",
+    "company": "",
+    "scope": "",
+    "users": "",
+    "deployment": "",
+    "isHolderWallet": "",
+    "isIssuerAgent": "",
+    "isVerifierAgent": "",
+    "connectionTypes": "",
+    "peer2peerProtocols": "",
+    "credExchangeProtocol": "",
+    "selectiveDisclosure": "",
+    "predicates": "",
+    "identifierHolder": "",
+    "identifierIssuer": "",
+    "revocationAlgorithm": "",
+    "verifierUnlinkability": "",
+    "observability": "",
+    "keyHistoryHolder": "",
+    "keyRotationHolder": "",
+    "keyHistoryIssuer": "",
+    "keyRotationIssuer": "",
+    "transferability": "",
+    "credentialFormat": "",
+    "encodingScheme": "",
+    "signatureAlgorithm": "",
+    "cryptoAgility": "",
+    "hardwareSupport": "",
+    "postQuantumSecure": "",
+    "blockchainUsed": "",
+    "blockchainType": "",
+    "blockchainPurpose": "",
+    "deepLinking": "",
+    "offlineFriendly": "",
+    "support": "",
+    "license": "",
+    "openSource": "",
+    "sourceCode": "",
+    "api": "",
+    "eassi": "",
+    "ebsi": "",
+    "website": "",
+    "appstore": "",
+    "googlePlay": "",
+    "webApp": "",
+    "email": "",
+    "supportEmail": ""
+}```
 
 <h3 id="characteristics">Characteristics</h3>
 
