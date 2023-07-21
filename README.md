@@ -83,7 +83,8 @@ Descriptions of fields can be seen on the [overview page](https://tno-ssi-lab.gi
     "webApp": "",
     "email": "",
     "supportEmail": ""
-}```
+}
+```
 
 <h3 id="characteristics">Characteristics</h3>
 
