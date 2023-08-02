@@ -2,6 +2,8 @@
 
 This is the repository for TNO's overview of SSI wallets. The actual overview can be found [here](https://tno-ssi-lab.github.io/wallet-overview/).
 
+Note: see [FindyFi's PR](https://github.com/tno-ssi-lab/wallet-overview/pull/3). It contains extra features and more wallets. This will be merged after the Summer.
+
 ## Sources
 The information is aggregated from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and our [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison).
 
