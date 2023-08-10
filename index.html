@@ -24,7 +24,7 @@
 			<col>
 			<colgroup span="2"></colgroup>
 			<colgroup span="2"></colgroup>
-			<tr>
+			<tr id="top-headers">
 
 				<th style="background-color: #547a95; color: white;" colspan="9" scope="colgroup">General</th>
 				<th style="background-color: #547a95; color: white;" colspan="11" scope="colgroup">Technology Stack</th>
@@ -33,19 +33,81 @@
 				<th style="background-color: #547a95; color: white;" colspan="4" scope="colgroup">Security</th>
 				<th style="background-color: #547a95; color: white;" colspan="5" scope="colgroup">Interoperability</th>
 			</tr>
-			<tr>
+			<tr id="table-headers">
 				<!-- General -->
 				<th scope="col">Logo</th>
-				<th scope="col">Wallet <button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
-				<th scope="col">Company <button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
-				<th scope="col">Scope</th>
-				<th scope="col">Deployment</th>
-				<th scope="col">Organizational Wallet</th>
-				<th scope="col">Open Source</th>
-				<th scope="col">Download</th>
-				<th scope="col">Support</th>
+				<th scope="col">Wallet 
+					<button class="btn" onclick="sortTable(1)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">The name of the wallet and the link to the website.</span>
+					</i>
+				</th>
+				<th scope="col">Company 
+					<button class="btn" onclick="sortTable(2)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">The developer of the wallet.</span>
+					</i>
+				</th>
+				<th scope="col">Scope
+					<button class="btn" onclick="sortTable(3)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">General-purpose or domain-specific, and for which domain.</span>
+					</i>
+				</th>
+				<th scope="col">Deployment
+					<button class="btn" onclick="sortTable(4)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">Running on edge-devices or in the cloud.</span>
+					</i>
+				</th>
+				
+				<th scope="col">Organizational Wallet
+					<button class="btn" onclick="sortTable(5)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">Organisations are the target users.</span>
+					</i>
+				</th>
+				<th scope="col">Open Source
+					<button class="btn" onclick="sortTable(6)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">Whether the wallet is open source and if so, the link to their code base.</span>
+					</i>
+				</th>
+				<th scope="col">Download
+					<button class="btn" onclick="sortTable(7)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">The links to the downloads in Google Play, the App Store or the link to the web app.</span>
+					</i>
+				</th>
+				
+				<th scope="col">Support
+					<button class="btn" onclick="sortTable(8)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+					<i class="tooltip fa fa-info-circle">
+						<span class="tooltiptext">The emailaddress for support.</span>
+					</i>
+				</th>
 				<!-- Tech Stack -->
-				<th scope="col">Credential Format</th>
+				<th scope="col">Credential Format
+					<button class="btn" onclick="sortTable(9)">
+						<i class="fa-solid fa-sort"></i>
+					</button>
+				</th>
 				<th scope="col">Encoding Scheme</th>
 				<th scope="col">Signature Algorithm</th>
 				<th scope="col">Holder Identifier</th>
@@ -155,7 +217,7 @@
 		// tbl.parentNode.insertBefore(a, tbl)
 		ic.parentNode.insertBefore(a, ic)
 	</script>
-	
+
 	<script>
 	function sortTable(n) {
 		var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -169,9 +231,10 @@
 			// Start by saying: no switching is done:
 			switching = false;
 			rows = table.rows;
+			console.log(rows)
 			/* Loop through all table rows (except the
 			first, which contains table headers): */
-			for (i = 1; i < (rows.length - 1); i++) {
+			for (i = 2; i < (rows.length - 1); i++) {
 				// Start by saying there should be no switching:
 				shouldSwitch = false;
 				/* Get the two elements you want to compare,

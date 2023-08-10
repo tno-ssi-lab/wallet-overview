@@ -31,7 +31,8 @@
         "revocationAlgorithm": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "verifierUnlinkability": "-",
+        "website": "https://www.aceblock.com/aceid-your-digital-identity-wallet/"
     },
     {
         "blockchain": {
