@@ -139,7 +139,7 @@ fetch("wallets.json")
 				<td>${wallet.offlineFriendly}</td>
 				<td>${wallet.keyHistoryHolder}</td>
 				<td>${wallet.keyHistoryIssuer}</td>
-				<td>${wallet.transferability}</td>
+				<td>${wallet.portability}</td>
 
 				<td>${wallet.selectiveDisclosure}</td>
 				<td>${wallet.predicates}</td>
