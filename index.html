@@ -1,114 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Setting the pages character encoding -->
 <meta charset="UTF-8">
-
 <!-- The meta viewport will scale my content to any device width -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Link to font-awesome for icons
-<link rel="stylesheet" href="static/font-awesome/css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- Link to my stylesheet -->
 <link rel="stylesheet" href="styles.css">
+
 <title>Wallet Characteristics Overview</title>
 </head>
+
 <body>
 	<h1>Wallet Overview</h1>
-<div class="tableFixHead">
-	<table id="myTable">
-		<thead>
+	<p style="text-align: center;">
+		<a href="https://github.com/tno-ssi-lab/wallet-overview"><i class="fas fa-code";></i>GitHub</a>
+		<a id="icons-top"></a>
+		<noscript>Javascript required.</noscript>
+	</p>
+	<div class="tableFixHead">
+		<table id="myTable">
+			<col>
+			<colgroup span="2"></colgroup>
+			<colgroup span="2"></colgroup>
 			<tr>
-				<th>Image</th>
 
-				<!-- <th onclick="sortTable(1)">Wallet <i class="fa-solid fa-sort"></i></th> -->
-				<th>Wallet<button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Company<button class="btn" onclick="sortTable(2)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Open Source<button class="btn" onclick="sortTable(3)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Connected to TNO EASSI<button class="btn" onclick="sortTable(4)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Credential Format<button class="btn" onclick="sortTable(5)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Encoding Scheme<button class="btn" onclick="sortTable(6)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Signature Algorithm<button class="btn" onclick="sortTable(7)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Holder Identifier<button class="btn" onclick="sortTable(8)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Issuer Identifier<button class="btn" onclick="sortTable(9)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Revocation Algorithm<button class="btn" onclick="sortTable(10)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Peer-to-Peer Protocol<button class="btn" onclick="sortTable(11)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Blockchain Used<button class="btn" onclick="sortTable(12)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Blockchain Type<button class="btn" onclick="sortTable(13)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Blockchain Purpose<button class="btn" onclick="sortTable(14)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Credential Exchange Protocol<button class="btn" onclick="sortTable(15)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Connection Type<button class="btn" onclick="sortTable(16)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Deep Linking<button class="btn" onclick="sortTable(17)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Offline Friendliness<button class="btn" onclick="sortTable(18)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Selective Disclosure<button class="btn" onclick="sortTable(19)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Predicates<button class="btn" onclick="sortTable(20)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Verifier Unlinkability<button class="btn" onclick="sortTable(21)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Crypto Agility<button class="btn" onclick="sortTable(22)"><i class="fa-solid fa-sort"></i></button></th>
-				<th>Post-Quantum Secure<button class="btn" onclick="sortTable(23)"><i class="fa-solid fa-sort"></i></button></th>
+				<th style="background-color: #547a95; color: white;" colspan="9" scope="colgroup">General</th>
+				<th style="background-color: #547a95; color: white;" colspan="11" scope="colgroup">Technology Stack</th>
+				<th style="background-color: #547a95; color: white;" colspan="6" scope="colgroup">User-Friendliness</th>
+				<th style="background-color: #547a95; color: white;" colspan="4" scope="colgroup">Privacy</th>
+				<th style="background-color: #547a95; color: white;" colspan="4" scope="colgroup">Security</th>
+				<th style="background-color: #547a95; color: white;" colspan="5" scope="colgroup">Interoperability</th>
 			</tr>
-		</thead>
-		<tbody id="data-output">
-			<!-- Wallets from javascript file in here. -->
-		</tbody>
-	</table>
-</div>
+			<tr>
+				<!-- General -->
+				<th scope="col">Logo</th>
+				<th scope="col">Wallet <button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
+				<th scope="col">Company <button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button></th>
+				<th scope="col">Scope</th>
+				<th scope="col">Deployment</th>
+				<th scope="col">Organizational Wallet</th>
+				<th scope="col">Open Source</th>
+				<th scope="col">Download</th>
+				<th scope="col">Support</th>
+				<!-- Tech Stack -->
+				<th scope="col">Credential Format</th>
+				<th scope="col">Encoding Scheme</th>
+				<th scope="col">Signature Algorithm</th>
+				<th scope="col">Holder Identifier</th>
+				<th scope="col">Issuer Identifier</th>
+				<th scope="col">Revocation Mechanism</th>
+				<th scope="col">Peer-to-Peer Protocol</th>
+				<th scope="col">Credential Exchange Protocol</th>
+				<th scope="col">Blockchain Used</th>
+				<th scope="col">Blockchain Type</th>
+				<th scope="col">Blockchain Purpose</th>
+				<!-- User Friendliness -->
+				<th scope="col">Connection Type</th>
+				<th scope="col">Deep-Linking</th>
+				<th scope="col">Offline Friendliness</th>
+				<th scope="col">Key History Holder</th>
+				<th scope="col">Key History Issuer</th>
+				<th scope="col">Transferability</th>
+				<!-- Privacy -->
+				<th scope="col">Selective Disclosure</th>
+				<th scope="col">Predicates</th>
+				<th scope="col">Verifier Unlinkability</th>
+				<th scope="col">Observability</th>
+				<!-- Security -->
+				<th scope="col">Crypto Agility</th>
+				<th scope="col">Post-Quantum Secure</th>
+				<th scope="col">Key Rotation Holder</th>
+				<th scope="col">Key Rotation Issuer</th>
+				<!-- Interoperability -->
+				<th scope="col">Connected to TNO EASSI</th>
+				<th scope="col">EBSI Compliant</th>
+				<th scope="col">AIP Compliant</th>
+				<th scope="col">DDIP Compliant</th>
+				<th scope="col">ISO 18013 Compliant</th>
+			</tr>
+			<tbody id="data-output">
+				<!-- Wallets from javascript file in here -->
+			</tbody>
+		</table>
+	</div>
 
-<script>
+		<!-- <table id="myTable"> -->
+			<!-- <thead>
+				<tr>
+					<th>Image</th>
+					<th>Wallet<button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button><i class="tooltip fa fa-info-circle">  <span class="tooltiptext">The name of the wallet.</span></i></th>
+					<th>Company<button class="btn" onclick="sortTable(2)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Open Source<button class="btn" onclick="sortTable(3)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Connected to TNO EASSI<button class="btn" onclick="sortTable(4)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Credential Format<button class="btn" onclick="sortTable(5)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Encoding Scheme<button class="btn" onclick="sortTable(6)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Signature Algorithm<button class="btn" onclick="sortTable(7)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Holder Identifier<button class="btn" onclick="sortTable(8)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Issuer Identifier<button class="btn" onclick="sortTable(9)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Revocation Algorithm<button class="btn" onclick="sortTable(10)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Peer-to-Peer Protocol<button class="btn" onclick="sortTable(11)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Blockchain Used<button class="btn" onclick="sortTable(12)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Blockchain Type<button class="btn" onclick="sortTable(13)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Blockchain Purpose<button class="btn" onclick="sortTable(14)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Credential Exchange Protocol<button class="btn" onclick="sortTable(15)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Connection Type<button class="btn" onclick="sortTable(16)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Deep Linking<button class="btn" onclick="sortTable(17)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Offline Friendliness<button class="btn" onclick="sortTable(18)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Selective Disclosure<button class="btn" onclick="sortTable(19)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Predicates<button class="btn" onclick="sortTable(20)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Verifier Unlinkability<button class="btn" onclick="sortTable(21)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Crypto Agility<button class="btn" onclick="sortTable(22)"><i class="fa-solid fa-sort"></i></button></th>
+					<th>Post-Quantum Secure<button class="btn" onclick="sortTable(23)"><i class="fa-solid fa-sort"></i></button></th>
+				</tr>
+			</thead>
+			<tbody id="data-output">
+				Wallets from javascript file in here
+			</tbody> -->
+		<!-- </table> -->
+	<!-- </div> -->
+
+	<!-- <div class="tableFixHead">
+		<table id="myTable">
+			<thead id="table-headers">
+			</thead>
+			<tbody id="data-output">
+			Wallets from javascript file in here.
+			</tbody>
+		</table>
+	</div> -->
+
+	<script>
+		const dType = 'application/vnd.ms-excel'
+		const fName = 'wallet-overview.xls'
+		const tbl = document.getElementById('myTable')
+		const ic = document.getElementById('icons-top')
+		const a = document.createElement('a')
+		a.appendChild(document.createTextNode('Open in Excel'))
+		a.innerHTML = '<i title="test" class="fa-solid fa-download"; style="color: black;"></i>Excel';
+		a.className = 'download'
+		a.download = fName
+		a.href = `data:${dType}, ${tbl.outerHTML.replace(/ /, '%20')}`
+		a.onclick = function(e) {
+			const tableData = tbl.outerHTML.replace(/<img[^>]*src="([^"]*)"[^>]*>/g, '$1')
+			this.href = `data:${dType}, ${encodeURIComponent(tableData)}`
+		}
+		a.onmousedown = function(e) {
+			this.classList.add('clicked')
+		}
+		a.onmouseup = a.onblur = function(e) {
+			this.classList.remove('clicked')
+		}
+		// tbl.parentNode.insertBefore(a, tbl)
+		ic.parentNode.insertBefore(a, ic)
+	</script>
+	
+	<script>
 	function sortTable(n) {
-	  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-	  table = document.getElementById("myTable");
-	  switching = true;
-	  // Set the sorting direction to ascending:
-	  dir = "asc";
-	  /* Make a loop that will continue until
-	  no switching has been done: */
-	  while (switching) {
-		// Start by saying: no switching is done:
-		switching = false;
-		rows = table.rows;
-		/* Loop through all table rows (except the
-		first, which contains table headers): */
-		for (i = 1; i < (rows.length - 1); i++) {
-		  // Start by saying there should be no switching:
-		  shouldSwitch = false;
-		  /* Get the two elements you want to compare,
-		  one from current row and one from the next: */
-		  x = rows[i].getElementsByTagName("TD")[n];
-		  y = rows[i + 1].getElementsByTagName("TD")[n];
-		  /* Check if the two rows should switch place,
-		  based on the direction, asc or desc: */
-		  if (dir == "asc") {
-			if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-			  // If so, mark as a switch and break the loop:
-			  shouldSwitch = true;
-			  break;
+		var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+		table = document.getElementById("myTable");
+		switching = true;
+		// Set the sorting direction to ascending:
+		dir = "asc";
+		/* Make a loop that will continue until
+		no switching has been done: */
+		while (switching) {
+			// Start by saying: no switching is done:
+			switching = false;
+			rows = table.rows;
+			/* Loop through all table rows (except the
+			first, which contains table headers): */
+			for (i = 1; i < (rows.length - 1); i++) {
+				// Start by saying there should be no switching:
+				shouldSwitch = false;
+				/* Get the two elements you want to compare,
+				one from current row and one from the next: */
+				x = rows[i].getElementsByTagName("TD")[n];
+				y = rows[i + 1].getElementsByTagName("TD")[n];
+				/* Check if the two rows should switch place,
+				based on the direction, asc or desc: */
+				if (dir == "asc") {
+					if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+					// If so, mark as a switch and break the loop:
+					shouldSwitch = true;
+					break;
+					}
+				} else if (dir == "desc") {
+					if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+					// If so, mark as a switch and break the loop:
+					shouldSwitch = true;
+					break;
+					}
+				}
 			}
-		  } else if (dir == "desc") {
-			if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-			  // If so, mark as a switch and break the loop:
-			  shouldSwitch = true;
-			  break;
-			}
-		  }
-		}
-		if (shouldSwitch) {
-		  /* If a switch has been marked, make the switch
-		  and mark that a switch has been done: */
-		  rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-		  switching = true;
-		  // Each time a switch is done, increase this count by 1:
-		  switchcount ++;
-		} else {
-		  /* If no switching has been done AND the direction is "asc",
-		  set the direction to "desc" and run the while loop again. */
-		  if (switchcount == 0 && dir == "asc") {
-			dir = "desc";
+			if (shouldSwitch) {
+			/* If a switch has been marked, make the switch
+			and mark that a switch has been done: */
+			rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
 			switching = true;
-		  }
+			// Each time a switch is done, increase this count by 1:
+			switchcount ++;
+			} else {
+				/* If no switching has been done AND the direction is "asc",
+				set the direction to "desc" and run the while loop again. */
+				if (switchcount == 0 && dir == "asc") {
+					dir = "desc";
+					switching = true;
+				}
+			}
 		}
-	  }
 	}
-</script>
-<script src="script.js"></script> <!-- Link to the javascript file -->
+	</script>
+	<script src="script.js"></script> <!-- Link to the javascript file -->
 </body>
 </html>

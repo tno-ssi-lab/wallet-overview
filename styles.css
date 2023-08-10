@@ -15,7 +15,6 @@ h1{
     text-align:center;
 	color: #555555;
 }
-
 table{
 	width:  1100px;
 	margin: 30px auto;
@@ -26,6 +25,7 @@ table th{
 	padding: 10px 5px;
 	background-color: #a4cdea;
 	border:  thin solid #d4d4d4;
+	color: #373535;
 }
 
 table td{
@@ -54,6 +54,7 @@ table {
 
 table img{
 	width:  100%;
+	margin: 0;
 }
 
 table thead tr th::before {
@@ -67,6 +68,7 @@ table thead tr th::before {
 
 table thead tr th {
 	white-space: nowrap;
+	z-index: 2;
 }
 
 table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
@@ -90,7 +92,7 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 
 .tableFixHead {
 	margin-top: 35px;
-	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
+	/* overflow-y:  auto; /* make the table scrollable if height is more than 200 px  */
 	height: calc(100vh - 2em - 50px - 10px); /* s.t. scroll bar is visible */
   }
   .tableFixHead thead th {
@@ -118,12 +120,86 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
     white-space: pre-wrap;
 }
 
-/* .icon{
-	color: red;
-	font-size:small;
-} */
+tr.verbose th {
+	vertical-align: top;
+}
+
+tr.verbose th::after {
+	content: attr(title);
+	display: block;
+	font-size: smaller;
+	font-style: italic;
+	font-weight: normal;
+	white-space: pre-wrap;
+}
 
 .btn{
 	background-color: transparent;
 	border: transparent;
+}
+
+/* a.download {
+	background-color: #EEE;
+	border: 2px outset #CCC;
+	border-radius: 0.25em;
+	color: #000;
+	display: block;
+	margin: 0;
+	padding: 0.5em;
+	position: fixed;
+	text-align: center;
+	text-decoration: none;
+	top: 1em;
+	width: 8em;
+} */
+
+a.clicked {
+	background-color: #DDD;
+	border-style: inset;
+	padding: 0.6em 0.4em 0.4em 0.6em;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 400px;
+	background-color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 0px 0;
+/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/* overflow: hidden;  */
+	max-width:300px;
+	font-family: sans-serif;
+	color:#555555;
+	font-weight: 500;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.btn{
+	margin: 0;
+}
+
+.fa{
+	margin: 0;
+	color: black;
+}
+
+a:link {
+	color: #4b7694;
+  }
+  
+a:visited {
+	color: #4b7694;
 }
