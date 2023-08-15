@@ -108,7 +108,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The credential profile(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Encoding Scheme
@@ -116,7 +116,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The encoding scheme(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Signature Algorithm
@@ -124,7 +124,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The signature algorithm(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Holder Identifier
@@ -132,7 +132,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The type of identifier used to identify the holder.</span>
 					</i>
 				</th>
 				<th scope="col">Issuer Identifier
@@ -140,7 +140,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The type of identifier used to identify the issuer.</span>
 					</i>
 				</th>
 				<th scope="col">Revocation Mechanism
@@ -148,7 +148,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The revocation mechanism(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Peer-to-Peer Protocol
@@ -156,7 +156,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The peer-to-peer protocol(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Credential Exchange Protocol
@@ -164,7 +164,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The credential exchange protocol(s) supported by the wallet.</span>
 					</i>
 				</th>
 				<th scope="col">Blockchain Used
@@ -172,7 +172,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">Does the wallet work with a blockchain?</span>
 					</i>
 				</th>
 				<th scope="col">Blockchain Type
@@ -180,7 +180,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The type(s) of blockchain supported by the wallet? N/A for wallets that do not use blockchain.</span>
 					</i>
 				</th>
 				<th scope="col">Blockchain Purpose
@@ -188,7 +188,7 @@
 						<i class="fa-solid fa-sort"></i>
 					</button>
 					<i class="tooltip fa fa-info-circle">
-						<span class="tooltiptext">The emailaddress for support.</span>
+						<span class="tooltiptext">The purpose(s) for which the wallet uses blockchain. N/A for wallets that do not use blockchain.</span>
 					</i>
 				</th>
 				<!-- User Friendliness -->
@@ -354,51 +354,6 @@
 		</table>
 	</div>
 
-		<!-- <table id="myTable"> -->
-			<!-- <thead>
-				<tr>
-					<th>Image</th>
-					<th>Wallet<button class="btn" onclick="sortTable(1)"><i class="fa-solid fa-sort"></i></button><i class="tooltip fa fa-info-circle">  <span class="tooltiptext">The name of the wallet.</span></i></th>
-					<th>Company<button class="btn" onclick="sortTable(2)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Open Source<button class="btn" onclick="sortTable(3)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Connected to TNO EASSI<button class="btn" onclick="sortTable(4)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Credential Format<button class="btn" onclick="sortTable(5)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Encoding Scheme<button class="btn" onclick="sortTable(6)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Signature Algorithm<button class="btn" onclick="sortTable(7)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Holder Identifier<button class="btn" onclick="sortTable(8)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Issuer Identifier<button class="btn" onclick="sortTable(9)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Revocation Algorithm<button class="btn" onclick="sortTable(10)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Peer-to-Peer Protocol<button class="btn" onclick="sortTable(11)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Blockchain Used<button class="btn" onclick="sortTable(12)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Blockchain Type<button class="btn" onclick="sortTable(13)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Blockchain Purpose<button class="btn" onclick="sortTable(14)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Credential Exchange Protocol<button class="btn" onclick="sortTable(15)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Connection Type<button class="btn" onclick="sortTable(16)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Deep Linking<button class="btn" onclick="sortTable(17)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Offline Friendliness<button class="btn" onclick="sortTable(18)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Selective Disclosure<button class="btn" onclick="sortTable(19)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Predicates<button class="btn" onclick="sortTable(20)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Verifier Unlinkability<button class="btn" onclick="sortTable(21)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Crypto Agility<button class="btn" onclick="sortTable(22)"><i class="fa-solid fa-sort"></i></button></th>
-					<th>Post-Quantum Secure<button class="btn" onclick="sortTable(23)"><i class="fa-solid fa-sort"></i></button></th>
-				</tr>
-			</thead>
-			<tbody id="data-output">
-				Wallets from javascript file in here
-			</tbody> -->
-		<!-- </table> -->
-	<!-- </div> -->
-
-	<!-- <div class="tableFixHead">
-		<table id="myTable">
-			<thead id="table-headers">
-			</thead>
-			<tbody id="data-output">
-			Wallets from javascript file in here.
-			</tbody>
-		</table>
-	</div> -->
-
 	<script>
 		const dType = 'application/vnd.ms-excel'
 		const fName = 'wallet-overview.xls'
@@ -420,7 +375,6 @@
 		a.onmouseup = a.onblur = function(e) {
 			this.classList.remove('clicked')
 		}
-		// tbl.parentNode.insertBefore(a, tbl)
 		ic.parentNode.insertBefore(a, ic)
 	</script>
 

@@ -17,6 +17,7 @@ h1{
 }
 table{
 	width:  1100px;
+	/* width: auto; */
 	margin: 30px auto;
 	table-layout: auto;
 }
@@ -26,6 +27,7 @@ table th{
 	background-color: #a4cdea;
 	border:  thin solid #d4d4d4;
 	color: #373535;
+	margin: 0;
 }
 
 table td{
@@ -35,10 +37,6 @@ table td{
 	text-align: center;
 	/* background-color: #fff; */
 }
-
-/* tr:nth-child(even) {
-	background-color: rgb(224, 232, 232);
-} */
 
 tr:nth-child(even) td {
 	background-color: rgb(224, 232, 232);
@@ -138,21 +136,6 @@ tr.verbose th::after {
 	border: transparent;
 }
 
-/* a.download {
-	background-color: #EEE;
-	border: 2px outset #CCC;
-	border-radius: 0.25em;
-	color: #000;
-	display: block;
-	margin: 0;
-	padding: 0.5em;
-	position: fixed;
-	text-align: center;
-	text-decoration: none;
-	top: 1em;
-	width: 8em;
-} */
-
 a.clicked {
 	background-color: #DDD;
 	border-style: inset;
@@ -171,7 +154,7 @@ a.clicked {
 	text-align: center;
 	border-radius: 6px;
 	padding: 5px 5px;
-/* Position the tooltip */
+	/* Position the tooltip */
 	position: absolute;
 	z-index: 1;
 	text-overflow: ellipsis;
@@ -191,8 +174,16 @@ a.clicked {
 	margin: 0;
 }
 
-.fa{
+.fa {
 	margin: 0;
+	color: black;
+}
+.fas {
+	margin: 2px;
+	color: black;
+}
+.fa-brands {
+	margin: 2px;
 	color: black;
 }
 

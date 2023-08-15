@@ -1,5 +1,9 @@
 [
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "AceBlock blockchain framework",
@@ -11,6 +15,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -24,20 +34,28 @@
         "name": "AceID Wallet*",
         "observability": "-",
         "offlineFriendly": "-",
-        "openSource": "?",
+        "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
+        "support": "-",
         "verifierUnlinkability": "-",
-        "website": "https://www.aceblock.com/aceid-your-digital-identity-wallet/"
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "-"
         },
         "company": "-",
@@ -46,6 +64,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -60,15 +84,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Anchoring public DIDs for issuers and/or verifiers (ie: enabling trust registry)",
             "type": "Cardano",
@@ -80,6 +113,12 @@
         "credentialFormat": "JWT-VC, soon:AnonCreds",
         "cryptoAgility": "Yes",
         "deepLinking": "No",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -94,15 +133,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Revocation not supported, soon: Revocation List 2021",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA, soon: CL",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Bitcoin and Ethereum, with Merkle proof linking credential to blockchain transaction",
@@ -114,6 +162,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -128,15 +182,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Ethereum or Blockpass",
@@ -148,6 +211,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -162,18 +231,27 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "?",
+            "type": "-",
             "used": "-"
         },
         "company": "Bloom",
@@ -181,7 +259,13 @@
         "credExchangeProtocol": "-",
         "credentialFormat": "-",
         "cryptoAgility": "-",
-        "deepLinking": "?",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -196,15 +280,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Schema, CredentialDefinitions, DID, Revocation",
             "type": "Hyperledger Indy",
@@ -216,6 +309,12 @@
         "credentialFormat": "AnonCred, JSON-LD",
         "cryptoAgility": "No",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -230,15 +329,24 @@
         "observability": "No",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm, DID Exchange Protocol, openID",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "BBS+",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Hyperledger Indy and Hyperledger Ursa",
@@ -250,6 +358,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "No",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -264,15 +378,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "For publishing schema IDs, credential def IDs and public DID",
             "type": "Hyperledger Indy, Ethereum, EBSI blockchain",
@@ -284,6 +407,12 @@
         "credentialFormat": "AnonCreds, VC(?)",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -298,15 +427,24 @@
         "observability": "No",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP, DIDComm, DID Exchange Protocol, Connection protocols in AIP 1.0",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation, EBSI revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL, ES256",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
@@ -318,6 +456,12 @@
         "credentialFormat": "LDP-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "yes",
         "encodingScheme": "JSON-LD",
         "hardwareSupport": "Yes",
@@ -332,15 +476,24 @@
         "observability": "No",
         "offlineFriendly": "No",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "Datakeeper protocol",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Depending on ...",
         "revocationAlgorithm": "Validity credential, Revocation not supported",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "ECDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "ArcBlock's own blockchain and comprehensive support for the Ethereum ecosystem.",
@@ -352,6 +505,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -366,15 +525,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
@@ -386,6 +554,12 @@
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "yes",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -400,15 +574,24 @@
         "observability": "No",
         "offlineFriendly": "No",
         "openSource": "A new version of the wallet - called SOWL wallet - will be available soon, together with an open source wallet SDK on which SOWL Wallet is based.",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "To anchor DIDs (legal entities), and to anchor the trust framework",
             "type": "We are agnostic to the infra, so the platform right now supports Ethereum, Fabric and EBSI",
@@ -420,6 +603,12 @@
         "credentialFormat": "LDP-VC, JTW-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON-LD",
         "hardwareSupport": "No",
@@ -434,18 +623,27 @@
         "observability": "Yes",
         "offlineFriendly": "Yes, implemntation according to ARF",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2017, Status List 2021",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "EdDSA, RSA, secp256k, P-256, CadEs",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "Yes"
         },
         "company": "Gimly",
@@ -454,6 +652,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -468,19 +672,28 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
-            "used": "Yes",
+            "purpose": "No personal data",
             "type": "public permissioned Ethereum, IPFS",
-            "purpose": "No personal data"
+            "used": "Yes"
         },
         "company": "Blockchain Helix AG",
         "connectionTypes": "Direct communication, Connection-based communication",
@@ -488,6 +701,12 @@
         "credentialFormat": "JWT, JWT-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization, JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -502,18 +721,27 @@
         "observability": "No",
         "offlineFriendly": "Yes",
         "openSource": "partly open sourced",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, DIDComm, DID Exchange Protocol",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "DID Revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "BBS+, ECDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "-"
         },
         "company": "-",
@@ -522,6 +750,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -536,18 +770,27 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "-"
         },
         "company": "-",
@@ -556,6 +799,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -570,15 +819,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Authorization, Credentials Schemas, Revocation registry",
             "type": "HyperLedger Indy",
@@ -590,6 +848,12 @@
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -604,15 +868,24 @@
         "observability": "No",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Ethereum",
@@ -624,6 +897,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "No",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "yes",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -638,15 +917,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Blockchain network based on Ethereum",
@@ -658,6 +946,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -672,15 +966,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Decentralized Public Key Infrastructure",
             "type": "Hyperledger Indy",
@@ -692,6 +995,12 @@
         "credentialFormat": "AnonCred",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "soon",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -706,15 +1015,24 @@
         "observability": "No",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Storing public keys",
             "type": "ION - if ION DID menthod used",
@@ -726,6 +1044,12 @@
         "credentialFormat": "LDP-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON-LD",
         "hardwareSupport": "No",
@@ -740,18 +1064,27 @@
         "observability": "No",
         "offlineFriendly": "Yes",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "RevocationList2020",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "BBS+, EdDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "-"
         },
         "company": "Microsoft",
@@ -760,6 +1093,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -774,15 +1113,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Scale up for DID",
             "type": "Metadium",
@@ -794,6 +1142,12 @@
         "credentialFormat": "JWT, JWT-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization, JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -808,15 +1162,24 @@
         "observability": "No",
         "offlineFriendly": "Yes",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "N/A",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Non-revocation token",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "ECDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
-     {
+    {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
@@ -828,6 +1191,12 @@
         "credentialFormat": "JWT-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization, JSON",
         "hardwareSupport": "No",
@@ -842,15 +1211,24 @@
         "observability": "No",
         "offlineFriendly": "Yes",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OID4VC",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "No",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "EdDSA, ES256",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Ethereum",
@@ -861,7 +1239,13 @@
         "credExchangeProtocol": "-",
         "credentialFormat": "-",
         "cryptoAgility": "-",
-        "deepLinking": "?",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -876,15 +1260,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
@@ -896,6 +1289,12 @@
         "credentialFormat": "JWT, JWT-VC, LDP-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization, JSON, JSON-LD, JSON-LD",
         "hardwareSupport": "Yes",
@@ -910,15 +1309,24 @@
         "observability": "Yes",
         "offlineFriendly": "No",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP, DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2021, Validity credential",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "BBS+, ECDSA, EdDSA, RSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Anchor DID & DID Documents, Trust Registry, Revocation Registry",
             "type": "Ethereum",
@@ -930,6 +1338,12 @@
         "credentialFormat": "AnonCred, JSON-LD",
         "cryptoAgility": "No",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "No",
@@ -944,15 +1358,24 @@
         "observability": "No",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP, DIDComm, DID Exchange Protocol",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Indy Revocation, Revocation 5539, Status List 2021",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "CL, BBS+, EdDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "identity, crypto",
             "type": "Ethereum, ION, EBSI, PolygonID",
@@ -964,6 +1387,12 @@
         "credentialFormat": "JWT-VC, JSON-LD",
         "cryptoAgility": "Yes",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -978,15 +1407,24 @@
         "observability": "Yes",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP, DID Exchange Protocol",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2021",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
             "type": "Ethereum",
@@ -998,6 +1436,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -1012,15 +1456,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Trust Anchor, Trust registry, root of trust",
             "type": "EBSI, Alastria, Ethereum",
@@ -1032,6 +1485,12 @@
         "credentialFormat": "JWT-VC, JSON-LD, JWT",
         "cryptoAgility": "Yes",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON, JSON-LD",
         "hardwareSupport": "Yes",
@@ -1046,15 +1505,24 @@
         "observability": "Yes",
         "offlineFriendly": "-",
         "openSource": "No",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Status List 2021",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA, EdDSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "EBSI - The aim of EBSI is to develop a secure and scalable blockchain infrastructure that can provide cross-border digital public services to citizens and businesses in Europe.\n\nIOTA - it's purpose is to provide a scalable, feeless, and decentralized transactional settlement and data transfer platform for the Internet of Things (IoT) ecosystem.\n\nVelocity - The purpose of the Velocity Network is to create a decentralized, global credentialing ecosystem that enables individuals to own, control, and securely share their verified career credentials while giving organizations access to a trusted talent marketplace.\n\nChqed - The purpose of the cheqd ecosystem is to provide a decentralized, privacy-preserving digital identity solution that allows individuals to have control over their personal data while enabling secure and verifiable credential exchange between individuals and organizations.",
             "type": "ebsi, iota, cheqd, velocity",
@@ -1066,6 +1534,12 @@
         "credentialFormat": "JWT, LDP-VC",
         "cryptoAgility": "Yes",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "compact and JSON serialization",
         "hardwareSupport": "Yes",
@@ -1080,18 +1554,27 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "No",
         "revocationAlgorithm": "Revocation not supported",
+        "scope": "-",
         "selectiveDisclosure": "No",
         "signatureAlgorithm": "ECDSA, EdDSA, RSA",
-        "verifierUnlinkability": "No"
+        "support": "-",
+        "verifierUnlinkability": "No",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "-",
-            "type": "",
+            "type": "-",
             "used": "-"
         },
         "company": "-",
@@ -1100,6 +1583,12 @@
         "credentialFormat": "-",
         "cryptoAgility": "-",
         "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "-",
         "hardwareSupport": "-",
@@ -1114,15 +1603,24 @@
         "observability": "-",
         "offlineFriendly": "-",
         "openSource": "-",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "-",
+        "portability": "-",
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
+        "scope": "-",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "-",
-        "verifierUnlinkability": "-"
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
@@ -1134,6 +1632,12 @@
         "credentialFormat": "Idemix ABC",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "yes",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
@@ -1148,15 +1652,24 @@
         "observability": "No",
         "offlineFriendly": "No",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "IRMA protocol ",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Own implementation on top of Idemix",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL, Schnorr",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     },
     {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
             "purpose": "Public DIDs and associated DID documents with verification keys and endpoints, schemas and credential definitions, revocation registries, agent authorisation policies",
             "type": "Sovrin",
@@ -1168,6 +1681,12 @@
         "credentialFormat": "AnonCred, RSA",
         "cryptoAgility": "No",
         "deepLinking": "Yes",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
         "eassi": "No",
         "encodingScheme": "JSON",
         "hardwareSupport": "Yes",
@@ -1182,12 +1701,17 @@
         "observability": "No",
         "offlineFriendly": "Yes",
         "openSource": "Yes",
+        "organizationalWallet": "-",
         "peer2peerProtocols": "DIDComm",
+        "portability": "-",
         "postQuantumSecure": "No",
         "predicates": "Yes",
         "revocationAlgorithm": "Indy revocation",
+        "scope": "-",
         "selectiveDisclosure": "Yes",
         "signatureAlgorithm": "CL, RSA",
-        "verifierUnlinkability": "Yes"
+        "support": "-",
+        "verifierUnlinkability": "Yes",
+        "website": "-"
     }
 ]
