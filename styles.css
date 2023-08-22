@@ -55,7 +55,7 @@ table img{
 	margin: 0;
 }
 
-table thead tr th::before {
+table tr#table-headers th::before {
 	content:'';
 	position:absolute;
 	left: 0;
@@ -64,22 +64,22 @@ table thead tr th::before {
 	border-top: 1px solid #ccc;
 }
 
-table thead tr th {
+table tr#table-headers th {
 	white-space: nowrap;
 	z-index: 2;
 }
 
-table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
+table tr#table-headers th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
 	position: sticky;
 	left: 0;
 	z-index: 1;
 }
 
-table thead tr th:nth-child(2) { /* keep column header in front of column content when scrolling */
-	z-index: 2;
+table tr#table-headers th:nth-child(2) { /* keep column header in front of column content when scrolling */
+	z-index: 3;
 }
 
-table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /* fix for keeping column border visible in combination with position sticky */
+table tr#table-headers th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /* fix for keeping column border visible in combination with position sticky */
 	content:'';
 	position:absolute;
 	top: 0;
@@ -93,7 +93,7 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 	/* overflow-y:  auto; /* make the table scrollable if height is more than 200 px  */
 	height: calc(100vh - 2em - 50px - 10px); /* s.t. scroll bar is visible */
   }
-  .tableFixHead thead th {
+  .tableFixHead tr#table-headers th {
 	position: sticky; /* make the table heads sticky */
 	top: 0px; /* table head will be placed from the top of the table and sticks to it */
   }
