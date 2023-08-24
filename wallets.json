@@ -17,8 +17,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -67,8 +67,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -117,8 +117,8 @@
         "deepLinking": "No",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -156,6 +156,106 @@
         "MDOC": "-",
         "blockchain": {
             "purpose": "-",
+            "type": "-",
+            "used": "-"
+        },
+        "company": "Microsoft",
+        "connectionTypes": "-",
+        "credExchangeProtocol": "-",
+        "credentialFormat": "-",
+        "cryptoAgility": "-",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "source" : "-",
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
+        "eassi": "No",
+        "encodingScheme": "-",
+        "hardwareSupport": "-",
+        "identifierHolder": "-",
+        "identifierIssuer": "-",
+        "keyHistoryHolder": "-",
+        "keyHistoryIssuer": "-",
+        "keyRotationHolder": "-",
+        "keyRotationIssuer": "-",
+        "logo": "static/authenticator.png",
+        "name": "Authenticator",
+        "observability": "-",
+        "offlineFriendly": "-",
+        "openSource": "-",
+        "organizationalWallet": "-",
+        "peer2peerProtocols": "-",
+        "portability": "-",
+        "postQuantumSecure": "-",
+        "predicates": "-",
+        "revocationAlgorithm": "-",
+        "scope": "-",
+        "selectiveDisclosure": "-",
+        "signatureAlgorithm": "-",
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
+    },
+    {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
+        "blockchain": {
+            "purpose": "-",
+            "type": "-",
+            "used": "-"
+        },
+        "company": "Government of BC",
+        "connectionTypes": "-",
+        "credExchangeProtocol": "-",
+        "credentialFormat": "-",
+        "cryptoAgility": "-",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "source" : "-",
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
+        "eassi": "No",
+        "encodingScheme": "-",
+        "hardwareSupport": "-",
+        "identifierHolder": "-",
+        "identifierIssuer": "-",
+        "keyHistoryHolder": "-",
+        "keyHistoryIssuer": "-",
+        "keyRotationHolder": "-",
+        "keyRotationIssuer": "-",
+        "logo": "static/bc-wallet.png",
+        "name": "BC Wallet",
+        "observability": "-",
+        "offlineFriendly": "-",
+        "openSource": "-",
+        "organizationalWallet": "-",
+        "peer2peerProtocols": "-",
+        "portability": "-",
+        "postQuantumSecure": "-",
+        "predicates": "-",
+        "revocationAlgorithm": "-",
+        "scope": "-",
+        "selectiveDisclosure": "-",
+        "signatureAlgorithm": "-",
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
+    },
+    {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
+        "blockchain": {
+            "purpose": "-",
             "type": "Bitcoin and Ethereum, with Merkle proof linking credential to blockchain transaction",
             "used": "Yes"
         },
@@ -167,8 +267,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -217,8 +317,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -267,8 +367,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -317,8 +417,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -367,8 +467,8 @@
         "deepLinking": "No",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -417,8 +517,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -467,8 +567,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -517,8 +617,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -555,6 +655,56 @@
         "EBSI": "-",
         "MDOC": "-",
         "blockchain": {
+            "purpose": "-",
+            "type": "-",
+            "used": "-"
+        },
+        "company": "Thales",
+        "connectionTypes": "-",
+        "credExchangeProtocol": "-",
+        "credentialFormat": "-",
+        "cryptoAgility": "-",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "source" : "-",
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
+        "eassi": "No",
+        "encodingScheme": "-",
+        "hardwareSupport": "-",
+        "identifierHolder": "-",
+        "identifierIssuer": "-",
+        "keyHistoryHolder": "-",
+        "keyHistoryIssuer": "-",
+        "keyRotationHolder": "-",
+        "keyRotationIssuer": "-",
+        "logo": "static/digital-id-wallet.png",
+        "name": "Digital ID Wallet",
+        "observability": "-",
+        "offlineFriendly": "-",
+        "openSource": "-",
+        "organizationalWallet": "-",
+        "peer2peerProtocols": "-",
+        "portability": "-",
+        "postQuantumSecure": "-",
+        "predicates": "-",
+        "revocationAlgorithm": "-",
+        "scope": "-",
+        "selectiveDisclosure": "-",
+        "signatureAlgorithm": "-",
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
+    },
+    {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
+        "blockchain": {
             "purpose": "N/A",
             "type": "N/A",
             "used": "No"
@@ -567,8 +717,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "https://apps.apple.com/us/app/esatus-wallet/id1496769057?itsct=apps_box&itscg=30200",
+            "source" : "-",
+            "appStore": "https://apps.apple.com/us/app/esatus-wallet/id1496769057?itsct=apps_box&itscg=30200",
             "googlePlay": "https://play.google.com/store/apps/details?id=com.esatus.wallet&hl=de_DE&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
             "webWallet": "-"
         },
@@ -617,8 +767,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -667,8 +817,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -717,8 +867,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -767,8 +917,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -817,8 +967,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -867,8 +1017,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -917,8 +1067,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -967,8 +1117,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1017,8 +1167,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1067,8 +1217,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1117,8 +1267,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1167,8 +1317,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1217,8 +1367,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1267,8 +1417,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1317,8 +1467,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1367,8 +1517,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1417,8 +1567,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1467,8 +1617,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1517,8 +1667,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1567,8 +1717,8 @@
         "deepLinking": "-",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1617,8 +1767,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
@@ -1667,8 +1817,8 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "source" : "-", 
-			"appStore": "-",
+            "source" : "-",
+            "appStore": "-",
             "googlePlay": "-",
             "webWallet": "-"
         },
