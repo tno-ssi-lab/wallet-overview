@@ -2,10 +2,10 @@
 
 This is the repository for TNO's overview of SSI wallets. The actual overview can be found [here](https://tno-ssi-lab.github.io/wallet-overview/).
 
-Note: see [FindyFi's PR](https://github.com/tno-ssi-lab/wallet-overview/pull/3). It contains extra features and more wallets. This will be merged after the Summer.
-
 ## Sources
 The information is aggregated from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and our [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison).
+
+FindyFi has contributed by providing additional characteristics and adding multiple wallets.
 
 ## Goal 
 The overview serves the following purposes:
@@ -17,9 +17,9 @@ See [below](#characteristics) for a description of the characteristics included.
 
 ## How to contribute
 You can contribute to the overview by:
+- [Preferred] Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 - Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
 - Sharing this repository in your network.
-- Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 
 <h3 id="modifying-json">Modifying <code>wallets.json </code></h3>
 
@@ -33,44 +33,62 @@ After your merge request has been accepted, you will see the updated version of 
 
 If you want to add/change the logo, add the logo to `wallet-overview/static/` and change `"logo": "static/<your-wallet>.png"`.
 
-    {
+        {
+        "AIP": "-",
+        "DDIP": "-",
+        "EBSI": "-",
+        "MDOC": "-",
         "blockchain": {
-            "used": "",
-            "type": "",
-            "purpose": ""
+            "purpose": "-",
+            "type": "-",
+            "used": "-"
         },
-        "company": "",
-        "connectionTypes": "",
-        "credExchangeProtocol": "",
-        "credentialFormat": "",
-        "cryptoAgility": "",
-        "deepLinking": "",
-        "eassi": "",
-        "encodingScheme": "",
-        "hardwareSupport": "",
-        "identifierHolder": "",
-        "identifierIssuer": "",
-        "keyHistoryHolder": "",
-        "keyHistoryIssuer": "",
-        "keyRotationHolder": "",
-        "keyRotationIssuer": "",
-        "logo": "",
-        "name": "",
-        "observability": "",
-        "offlineFriendly": "",
-        "openSource": "",
-        "peer2peerProtocols": "",
-        "postQuantumSecure": "",
-        "predicates": "",
-        "revocationAlgorithm": "",
-        "selectiveDisclosure": "",
-        "signatureAlgorithm": "",
-        "verifierUnlinkability": ""
+        "company": "-",
+        "connectionTypes": "-",
+        "credExchangeProtocol": "-",
+        "credentialFormat": "-",
+        "cryptoAgility": "-",
+        "deepLinking": "-",
+        "deployment": "-",
+        "download": {
+            "appStore": "-",
+            "googlePlay": "-",
+            "webWallet": "-"
+        },
+        "eassi": "-",
+        "encodingScheme": "-",
+        "hardwareSupport": "-",
+        "identifierHolder": "-",
+        "identifierIssuer": "-",
+        "keyHistoryHolder": "-",
+        "keyHistoryIssuer": "-",
+        "keyRotationHolder": "-",
+        "keyRotationIssuer": "-",
+        "logo": "static/<wallet-name>.png",
+        "name": "-",
+        "observability": "-",
+        "offlineFriendly": "-",
+        "openSource": "-",
+        "organizationalWallet": "-",
+        "peer2peerProtocols": "-",
+        "portability": "-",
+        "postQuantumSecure": "-",
+        "predicates": "-",
+        "revocationAlgorithm": "-",
+        "scope": "-",
+        "selectiveDisclosure": "-",
+        "signatureAlgorithm": "-",
+        "support": "-",
+        "verifierUnlinkability": "-",
+        "website": "-"
     },
 
 <h3 id="characteristics">Characteristics</h3>
 
-The characteristics included are listed [above](#format). Here we will give a short description of characteristics that are not obvious from their name.
+The characteristics included are listed [above](#format). The description of the characteristics can be read by clicking on the information button.
+
+<!-- 
+Here we will give a short description of characteristics that are not obvious from their name. 
 
 **connectionTypes** list the types of connections the wallet can handle, i.e. either direct communication via QR-codes, bluetooth, etc. versus connection-based. The latter uses a persistent connection with another party, that is reused for new interactions.
 
@@ -97,4 +115,4 @@ The characteristics included are listed [above](#format). Here we will give a sh
 **selectiveDisclosure** is about whether the credential format can present a subset of the claims in the credentials.
 
 **verifierUnlinkability** is when the verifier cannot correlate multiple presentation exchanges with the same holder, i.e. the verifier does not know they are communicating with the same holder again. This depends on the signature algorithm and the holder's identifier.
-
+ -->
