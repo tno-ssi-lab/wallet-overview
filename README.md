@@ -1,72 +1,92 @@
 # Overview of SSI Wallets and their Characteristics
 
-This is the repository for TNO's overview of SSI wallets. The actual overview can be found [here](https://tno-ssi-lab.github.io/wallet-overview/).
+The actual overview can be found [here](https://FindyFi.github.io/wallet-overview/).
+
+This is a fork of the repository for [TNO's overview of SSI wallets](https://github.com/tno-ssi-lab/wallet-overview). TNO doesn't currently have budget available for maintaining their repository.
 
 Note: see [FindyFi's PR](https://github.com/tno-ssi-lab/wallet-overview/pull/3). It contains extra features and more wallets. This will be merged after the Summer.
 
 ## Sources
-The information is aggregated from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and our [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison).
+The original information was aggregated byt TNO from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and the [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison). More information is added by Findynet's research.
 
 ## Goal 
 The overview serves the following purposes:
 - Issuers, verifiers and holders can use it to make a choice in wallet, based on their preferred characteristics.
 - It offers insight in which wallets are interoperable with each other.
-- It allows us to prioritise for which wallet a connector to our [TNO EASSI gateway](https://eassi.ssi-lab.nl/) should be developed.
 
 See [below](#characteristics) for a description of the characteristics included.
 
 ## How to contribute
 You can contribute to the overview by:
-- Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
 - Sharing this repository in your network.
 - Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 
-<h3 id="modifying-json">Modifying <code>wallets.json </code></h3>
+<h3 id="modifying-json">Modifying <code>wallets.json</code></h3>
 
-To update the overview, you just have to update `wallets.json`. Search for your wallet and update the characteristic(s) you want to change. If you want to add a new wallet, add and fill in the [format](#format) to `wallets.json`.
+To update the overview, you just have to update [wallets.json](wallets.json). Search for your wallet and update the characteristic(s) you want to change. If you want to add a new wallet, add and fill in the [format](#format) to `wallets.json`.
 
-Note that you can't add new types of characteristics. If you feel that a new characteristic should be added, create an [issue](https://github.com/tno-ssi-lab/wallet-overview/issues/new).
+Note that you can't add new types of characteristics. If you feel that a new characteristic should be added, create an [issue](https://github.com/FindyFi/wallet-overview/issues/new).
 
-After your merge request has been accepted, you will see the updated version of the overview on the [overview page](https://tno-ssi-lab.github.io/wallet-overview/). If you want to see locally what the modified HTML looks like, open a terminal in your local copy of the repository and type `python -m http.server 8080`, then you should see the modified overview [here](http://localhost:8080/).
+After your merge request has been accepted, you will see the updated version of the overview on the [overview page](https://FindyFi.github.io/wallet-overview/). If you want to see locally what the modified HTML looks like, open a terminal in your local copy of the repository and type `python -m http.server 8080`, then you should see the modified overview [here](http://localhost:8080/).
 
 <h3 id="format">Format</h3>
 
-If you want to add/change the logo, add the logo to `wallet-overview/static/` and change `"logo": "static/<your-wallet>.png"`.
+If you want to add/change the logo, add the logo to [static/](static/) and change `"logo": "static/<your-wallet>.png"`.
 
-    {
-        "blockchain": {
-            "used": "",
-            "type": "",
-            "purpose": ""
-        },
-        "company": "",
-        "connectionTypes": "",
-        "credExchangeProtocol": "",
-        "credentialFormat": "",
-        "cryptoAgility": "",
-        "deepLinking": "",
-        "eassi": "",
-        "encodingScheme": "",
-        "hardwareSupport": "",
-        "identifierHolder": "",
-        "identifierIssuer": "",
-        "keyHistoryHolder": "",
-        "keyHistoryIssuer": "",
-        "keyRotationHolder": "",
-        "keyRotationIssuer": "",
-        "logo": "",
-        "name": "",
-        "observability": "",
-        "offlineFriendly": "",
-        "openSource": "",
-        "peer2peerProtocols": "",
-        "postQuantumSecure": "",
-        "predicates": "",
-        "revocationAlgorithm": "",
-        "selectiveDisclosure": "",
-        "signatureAlgorithm": "",
-        "verifierUnlinkability": ""
-    },
+Descriptions of fields can be seen on the [overview page](https://FindyFi.github.io/wallet-overview/) or in [script.js](script.js).
+
+```json
+{
+    "logo": "",
+    "name": "",
+    "company": "",
+    "scope": "",
+    "users": "",
+    "deployment": "",
+    "isHolderWallet": "",
+    "isIssuerAgent": "",
+    "isVerifierAgent": "",
+    "connectionTypes": "",
+    "peer2peerProtocols": "",
+    "credExchangeProtocol": "",
+    "selectiveDisclosure": "",
+    "predicates": "",
+    "identifierHolder": "",
+    "identifierIssuer": "",
+    "revocationAlgorithm": "",
+    "verifierUnlinkability": "",
+    "observability": "",
+    "keyHistoryHolder": "",
+    "keyRotationHolder": "",
+    "keyHistoryIssuer": "",
+    "keyRotationIssuer": "",
+    "transferability": "",
+    "credentialFormat": "",
+    "encodingScheme": "",
+    "signatureAlgorithm": "",
+    "cryptoAgility": "",
+    "hardwareSupport": "",
+    "postQuantumSecure": "",
+    "blockchainUsed": "",
+    "blockchainType": "",
+    "blockchainPurpose": "",
+    "deepLinking": "",
+    "offlineFriendly": "",
+    "support": "",
+    "license": "",
+    "openSource": "",
+    "sourceCode": "",
+    "api": "",
+    "eassi": "",
+    "ebsi": "",
+    "website": "",
+    "appstore": "",
+    "googlePlay": "",
+    "webApp": "",
+    "email": "",
+    "supportEmail": ""
+}
+```
 
 <h3 id="characteristics">Characteristics</h3>
 
@@ -78,7 +98,7 @@ The characteristics included are listed [above](#format). Here we will give a sh
 
 **deepLinking** allows for sending the user to the wallet app instead of to a website, such that the user can have a mobile-only workflow.
 
-**eassi** is whether the wallet connected to our [TNO EASSI gateway](https://eassi.ssi-lab.nl/).
+**eassi** is whether the wallet connected to [TNO EASSI gateway](https://eassi.ssi-lab.nl/).
 
 **hardwareSupport** is about whether the signature algorithm(s) is implemented in a commonly used cryptographic hardware modules, such as HSMs, TEEs, etc.
 

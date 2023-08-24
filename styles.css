@@ -69,17 +69,17 @@ table thead tr th {
 	white-space: nowrap;
 }
 
-table thead tr th:nth-child(2), table tbody tr td:nth-child(2) { /* make the second table column sticky */
+table thead tr th:nth-child(3), table tbody tr td:nth-child(3) { /* make the second table column sticky */
 	position: sticky;
 	left: 0;
 	z-index: 1;
 }
 
-table thead tr th:nth-child(2) { /* keep column header in front of column content when scrolling */
+table thead tr th:nth-child(3) { /* keep column header in front of column content when scrolling */
 	z-index: 2;
 }
 
-table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /* fix for keeping column border visible in combination with position sticky */
+table thead tr th:nth-child(3)::after, table tbody tr td:nth-child(3)::after { /* fix for keeping column border visible in combination with position sticky */
 	content:'';
 	position:absolute;
 	top: 0;
@@ -92,20 +92,20 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 	margin-top: 35px;
 	overflow-y: auto; /* make the table scrollable if height is more than 200 px  */
 	height: calc(100vh - 2em - 50px - 10px); /* s.t. scroll bar is visible */
-  }
-  .tableFixHead thead th {
+}
+.tableFixHead thead th {
 	position: sticky; /* make the table heads sticky */
 	top: 0px; /* table head will be placed from the top of the table and sticks to it */
-  }
-  table {
+}
+table {
 	border-collapse: collapse; /* make the table borders collapse to each other */
 	width: 100%;
-  }
-  th,
-  td {
+}
+th,
+td {
 	padding: 8px 16px;
 	border: 1px solid #ccc;
-  }
+}
 
 .td-wrap{ /* for text wrapping */
 	text-overflow: ellipsis;
@@ -118,6 +118,19 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
     white-space: pre-wrap;
 }
 
+tr.verbose th {
+	vertical-align: top;
+}
+
+tr.verbose th::after {
+	content: attr(title);
+	display: block;
+	font-size: smaller;
+	font-style: italic;
+	font-weight: normal;
+	white-space: pre-wrap;
+}
+
 /* .icon{
 	color: red;
 	font-size:small;
@@ -126,4 +139,25 @@ table thead tr th:nth-child(2)::after, table tbody tr td:nth-child(2)::after { /
 .btn{
 	background-color: transparent;
 	border: transparent;
+}
+
+a.download {
+	background-color: #EEE;
+	border: 2px outset #CCC;
+	border-radius: 0.25em;
+	color: #000;
+	display: block;
+	margin: 0;
+	padding: 0.5em;
+	position: fixed;
+	text-align: center;
+	text-decoration: none;
+	top: 1em;
+	width: 8em;
+}
+
+a.clicked {
+	background-color: #DDD;
+	border-style: inset;
+	padding: 0.6em 0.4em 0.4em 0.6em;
 }
