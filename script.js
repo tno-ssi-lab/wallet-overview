@@ -14,7 +14,7 @@ fetch("wallets.json")
 				<td class="td-wrap">${wallet.scope}</td>
 				<td>${wallet.deployment}</td>
 				<td>${wallet.organizationalWallet}</td>
-				<td class="td-wrap">${wallet.openSource}</td>
+				<td class="td-wrap">${wallet.openSource == 'Yes' ? '<a href="'+wallet.download.source+'">'+wallet.openSource+'</a>' : wallet.openSource}</td>
 				<td>${wallet.download.googlePlay == '-' ? '-': '<a href="'+wallet.download.googlePlay+'"><i class="fa-brands fa-google-play"></i></a>'}
 				${wallet.download.appStore == '-' ? '-': '<a href="'+wallet.download.appStore+'"><i class="fa-brands fa-app-store"></i></a>'}
 				${wallet.download.webWallet == '-' ? '-': '<a href="'+wallet.download.webWallet+'"><i class="fa-brands fa-firefox"></i></a>'}</td> 
