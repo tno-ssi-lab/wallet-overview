@@ -58,7 +58,7 @@
             "type": "-",
             "used": "-"
         },
-        "company": "-",
+        "company": "Apple",
         "connectionTypes": "-",
         "credExchangeProtocol": "-",
         "credentialFormat": "-",
@@ -462,7 +462,7 @@
             "googlePlay": "-",
             "webWallet": "-"
         },
-        "eassi": "yes",
+        "eassi": "Yes",
         "encodingScheme": "JSON-LD",
         "hardwareSupport": "Yes",
         "identifierHolder": "did:eth",
@@ -556,11 +556,11 @@
         "deepLinking": "Yes",
         "deployment": "-",
         "download": {
-            "appStore": "-",
-            "googlePlay": "-",
+            "appStore": "https://apps.apple.com/us/app/esatus-wallet/id1496769057?itsct=apps_box&itscg=30200",
+            "googlePlay": "https://play.google.com/store/apps/details?id=com.esatus.wallet&hl=de_DE&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
             "webWallet": "-"
         },
-        "eassi": "yes",
+        "eassi": "Yes",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
         "identifierHolder": "Link secret",
@@ -585,7 +585,7 @@
         "signatureAlgorithm": "CL",
         "support": "-",
         "verifierUnlinkability": "Yes",
-        "website": "-"
+        "website": "https://esatus.com/index.html%3Fp=7663&lang=en.html"
     },
     {
         "AIP": "-",
@@ -903,7 +903,7 @@
             "googlePlay": "-",
             "webWallet": "-"
         },
-        "eassi": "yes",
+        "eassi": "Yes",
         "encodingScheme": "-",
         "hardwareSupport": "-",
         "identifierHolder": "-",
@@ -1001,7 +1001,7 @@
             "googlePlay": "-",
             "webWallet": "-"
         },
-        "eassi": "soon",
+        "eassi": "Soon",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
         "identifierHolder": "Link secret",
@@ -1283,7 +1283,7 @@
             "type": "N/A",
             "used": "No"
         },
-        "company": "-",
+        "company": "Sphereon",
         "connectionTypes": "Direct communication, Connection-based communication",
         "credExchangeProtocol": "OIDC4CI, OIDC4VP, Presentation Exchange",
         "credentialFormat": "JWT, JWT-VC, LDP-VC",
@@ -1638,7 +1638,7 @@
             "googlePlay": "-",
             "webWallet": "-"
         },
-        "eassi": "yes",
+        "eassi": "Yes",
         "encodingScheme": "JSON",
         "hardwareSupport": "No",
         "identifierHolder": "Link secret",

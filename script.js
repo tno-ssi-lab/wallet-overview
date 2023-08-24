@@ -9,14 +9,16 @@ fetch("wallets.json")
 		out += `
 			<tr>
 				<td><img src='${wallet.logo}'></td>
-				<td><a href="${wallet.website}">${wallet.name}</a></td>	
+				<td>${wallet.website == "-" ? wallet.name: '<a href="'+wallet.website+'">'+wallet.name+'</a>'}</td>	
 				<td>${wallet.company}</td>
 				<td class="td-wrap">${wallet.scope}</td>
 				<td>${wallet.deployment}</td>
 				<td>${wallet.organizationalWallet}</td>
 				<td class="td-wrap">${wallet.openSource}</td>
-				<td><a href="${wallet.download.googlePlay}"><i class="fa-brands fa-google-play"></i></a><a href="${wallet.download.appStore}"><i class="fa-brands fa-app-store"></i></a><a href="${wallet.download.webWallet}"><i class="fa-brands fa-firefox"></i></a></td> 
-				<td><a href="mailto:${wallet.support}">e-mail</a></td>
+				<td>${wallet.download.googlePlay == '-' ? '-': '<a href="'+wallet.download.googlePlay+'"><i class="fa-brands fa-google-play"></i></a>'}
+				${wallet.download.appStore == '-' ? '-': '<a href="'+wallet.download.appStore+'"><i class="fa-brands fa-app-store"></i></a>'}
+				${wallet.download.webWallet == '-' ? '-': '<a href="'+wallet.download.webWallet+'"><i class="fa-brands fa-firefox"></i></a>'}</td> 
+				<td>${wallet.support == '-' ? '-' : '<a href="mailto:'+wallet.support+'">e-mail</a>'}</td>
 
 				<td>${wallet.credentialFormat}</td>
 				<td>${wallet.encodingScheme}</td>
