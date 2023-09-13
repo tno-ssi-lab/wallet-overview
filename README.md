@@ -33,7 +33,7 @@ After your merge request has been accepted, you will see the updated version of 
 
 If you want to add/change the logo, add the logo to `wallet-overview/static/` and change `"logo": "static/<your-wallet>.png"`.
 
-        {
+    {
         "AIP": "-",
         "DDIP": "-",
         "EBSI": "-",
