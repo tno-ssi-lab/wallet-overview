@@ -1584,7 +1584,7 @@
         "name": "Tap ID",
         "observability": "-",
         "offlineFriendly": "Yes",
-        "openSource": "-",
+        "openSource": "No",
         "organizationalWallet": "-",
         "peer2peerProtocols": "OIDC, SIOP, DIDComm",
         "portability": "-",
