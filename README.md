@@ -1,8 +1,8 @@
-# Overview of SSI Wallets and their Characteristics
+# Overview of SSI Agents and their Characteristics
 
 The actual overview can be found [here](https://FindyFi.github.io/wallet-overview/).
 
-This is a fork of the repository for [TNO's overview of SSI wallets](https://github.com/tno-ssi-lab/wallet-overview). TNO doesn't currently have budget available for maintaining their repository.
+This is a fork of the repository for [TNO's overview of SSI wallets](https://github.com/tno-ssi-lab/wallet-overview).
 
 ## Sources
 The original information was aggregated byt TNO from input from wallet vendors (via a [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en)), TNO internal overviews and the [IIW/RWOT work on credential profiles](https://github.com/vcstuff/credential-profile-comparison). More information is added by Findynet's research.
