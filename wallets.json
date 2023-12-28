@@ -41,7 +41,7 @@
         "postQuantumSecure": "-",
         "predicates": "-",
         "revocationAlgorithm": "-",
-        "scope": "-",
+        "scope": "Payments",
         "selectiveDisclosure": "-",
         "signatureAlgorithm": "RSA, ECDSA, EdDSA",
         "support": "-",
