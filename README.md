@@ -2,7 +2,7 @@ This repo has been migrated to the new [OWF SIG repository](https://github.com/o
 
 
 
-# Overview of SSI Wallets and their Characteristics
+# [DEPRECATED] Overview of SSI Wallets and their Characteristics
 
 This is the repository for TNO's overview of SSI wallets. The actual overview can be found [here](https://tno-ssi-lab.github.io/wallet-overview/).
 
@@ -19,7 +19,7 @@ The overview serves the following purposes:
 
 See [below](#characteristics) for a description of the characteristics included.
 
-## How to contribute
+## PLEASE CONTRIBUTE IN THE NEW REPO, see [OWF SIG repository](https://github.com/openwallet-foundation/digital-wallet-and-agent-overviews-sig)
 You can contribute to the overview by:
 - [Preferred] Directly contributing to the overview through forking. See [below](#modifying-json) on how to do this concretely.
 - Filling in the [form](https://docs.google.com/forms/d/e/1FAIpQLSdM1h1n-LtbaB5ug8YEnT7pfa__2Y4ehhNobdsPdNMA63c4YQ/viewform?usp=sf_link?hl=en) if you are a wallet vendor.
